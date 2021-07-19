@@ -1,7 +1,7 @@
-# Личный проект «Кэт энерджи»
+# Личный проект «Кэт энерджи» / Personal project "Cat Energy"
 
 * Студент: [Tanja](https://up.htmlacademy.ru/adaptive/23/user/1621659).
-* Наставник: `Неизвестно`.
+* Наставник: [Alex Khabirov](https://htmlacademy.ru/profile/alex_khab).
 
 ---
 
