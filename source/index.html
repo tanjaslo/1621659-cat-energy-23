@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <a
+        class="page-header__logo-link"
+        aria-label="Перейти на главную страницу"
+      >
+        <img
+          class="page-header__logo-image"
+          src="img/logo-mobile.svg"
+          width="34"
+          height="38"
+          alt="Cat energy logo"
+        />
+        <img
+          class="page-header__logo-text"
+          src="img/logo-mobile-2.svg"
+          width="101"
+          height="18"
+          alt="Cat energy text logo"
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__hamburger" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="selection.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="about">
+        <h1 class="about__header">Функциональное питание для котов</h1>
+        <p class="about__slogan">Занялся собой? Займись котом!</p>
+        <img
+          class="about__img"
+          src="img/index-can.svg"
+          width="280"
+          height="270"
+          alt="Cat energy Pro со вкусом курицы"
+        />
+      </section>
+      <section class="selection">
+        <h2 class="visually-hidden">Выбор программы питания</h2>
+        <a
+          class="selection__link"
+          href="selection.html"
+          aria-label="Перейти на страницу выбора программы"
+          >Подобрать программу</a
+        >
+      </section>
+    </main>
   </body>
 </html>
