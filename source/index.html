@@ -20,26 +20,26 @@
         />
         <img
           class="page-header__logo-text"
-          src="img/logo-mobile-2.svg"
+          src="img/logo-mobile-text.svg"
           width="101"
           height="18"
           alt="Текстовый логотип сайта Cat energy"
         />
       </a>
       <nav class="main-nav">
-        <button class="main-nav__hamburger" type="button">
+        <button class="main-nav__toggler" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item active">
-              <a href="#">Главная</a>
+          <ul class="main-nav__list menu">
+            <li class="menu__item menu__item--active">
+              <a class="menu__link" href="#">Главная</a>
             </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+            <li class="menu__item">
+              <a class="menu__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-nav__item">
-              <a href="selection.html">Подбор программы</a>
+            <li class="menu__item">
+              <a class="menu__link" href="selection.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -56,16 +56,16 @@
           height="270"
           alt="Cat energy Pro со вкусом курицы"
         />
+        <a
+          class="options__link"
+          href="selection.html"
+          aria-label="Перейти на страницу выбора программы"
+          >Подобрать программу</a
+        >
       </section>
       <section class="options">
         <div class="options__wrapper">
           <h2 class="visually-hidden">Выбор программ питания</h2>
-          <a
-            class="options__link"
-            href="selection.html"
-            aria-label="Перейти на страницу выбора программы"
-            >Подобрать программу</a
-          >
           <ul class="options__list">
             <li class="options__item">
               <h3 class="options__title options__title--slim">Похудение</h3>
@@ -87,31 +87,30 @@
           </ul>
         </div>
       </section>
-      <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Преимущества Cat Energy</h2>
-          <h3 class="advantages__title">Как это работает</h3>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--nutrients">
-              <p class="advantages__text">
+      <section class="features">
+        <div class="features__wrapper">
+          <h2 class="features__title">Как это работает</h2>
+          <ul class="features__list">
+            <li class="features__item features__item--nutrients">
+              <p class="features__text">
                 Функциональное питание содержит только полезные питательные
                 вещества.
               </p>
             </li>
-            <li class="advantages__item advantages__item--water">
-              <p class="advantages__text">
+            <li class="features__item features__item--water">
+              <p class="features__text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и
                 готово.
               </p>
             </li>
-            <li class="advantages__item advantages__item--eating">
-              <p class="advantages__text">
+            <li class="features__item features__item--eating">
+              <p class="features__text">
                 Замените один-два приема обычной еды на наше функциональное
                 питание.
               </p>
             </li>
-            <li class="advantages__item advantages__item--time">
-              <p class="advantages__text">
+            <li class="features__item features__item--time">
+              <p class="features__text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего
                 питомца!
               </p>
@@ -121,8 +120,7 @@
       </section>
       <section class="example">
         <div class="example__wrapper">
-          <h2 class="visually-hidden">Пример похудения с Cat Energy</h2>
-          <h3 class="example__title">Живой пример</h3>
+          <h2 class="example__title">Живой пример</h2>
           <p class="example__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
             Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
@@ -160,10 +158,18 @@
                 height="232"
               />
             </div>
-            <div class="example__toggles slider-toggles">
-              <span class="slider-toggles__label">Было</span>
-              <div class="slider-toggles__range"></div>
-              <span class="slider-toggles__label">Стало</span>
+            <div class="slider__toggles slider-controls">
+              <button
+                class="slider-controls__button slider-controls__button--before"
+              >
+                Было
+              </button>
+              <div class="slider-controls__range"></div>
+              <button
+                class="slider-controls__button slider-controls__button--after"
+              >
+                Стало
+              </button>
             </div>
           </div>
         </div>
@@ -193,67 +199,61 @@
       >
         <img
           class="page-footer__logo-text"
-          src="img/logo-mobile-2.svg"
+          src="img/logo-mobile-text.svg"
           width="128"
           height="24"
           alt="Текстовый логотип сайта Cat energy"
         />
       </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a
-              class="social__link social__link--vkontakte"
-              href="https://vk.com/htmlacademy"
-              target="_blank"
-              rel="noopener"
-              aria-label="Перейти во вконтакте"
-            >
-              <span class="visually-hidden">Мы во Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--instagram"
-              href="https://www.instagram.com/htmlacademy"
-              target="_blank"
-              rel="noopener"
-              aria-label="Перейти в инстаграм"
-            >
-              <span class="visually-hidden">Мы в Инстаграме</span></a
-            >
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--facebook"
-              href="https://www.facebook.com/htmlacademy"
-              target="_blank"
-              rel="noopener"
-              aria-label="Перейти в фейсбук"
-            >
-              <span class="visually-hidden">Мы в Фейсбуке</span></a
-            >
-          </li>
-        </ul>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a
+            class="social__link social__link--vkontakte"
+            href="https://vk.com/htmlacademy"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="visually-hidden">Мы во Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            class="social__link social__link--instagram"
+            href="https://www.instagram.com/htmlacademy"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="visually-hidden">Мы в Инстаграме</span></a
+          >
+        </li>
+        <li class="social__item">
+          <a
+            class="social__link social__link--facebook"
+            href="https://www.facebook.com/htmlacademy"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="visually-hidden">Мы в Фейсбуке</span></a
+          >
+        </li>
+      </ul>
+      <div class="page-footer__developer">
+        <a
+          class="developer__link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="developer__name">HTML Academy</span>
+          <img
+            class="developer__logo"
+            src="img/html-academy.svg"
+            width="27"
+            height="34"
+            alt="Логотип разработчика"
+          />
+        </a>
       </div>
     </footer>
-    <div class="page-footer__developer">
-      <a
-        class="developer__link"
-        href="https://htmlacademy.ru/intensive/adaptive"
-        target="_blank"
-        rel="noopener"
-        aria-label="Перейти на сайт разработчика"
-      >
-        <span class="developer__name">HTML Academy</span>
-        <img
-          class="developer__logo"
-          src="img/html-academy.svg"
-          width="27"
-          height="34"
-          alt="Логотип разработчика"
-        />
-      </a>
-    </div>
   </body>
 </html>
