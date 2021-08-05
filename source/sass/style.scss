@@ -1,1 +1,20 @@
-// Начните писать стили здесь
+//Global
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/visually-hidden.scss";
+
+//Blocks
+@import "blocks/contacts.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/menu.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+
+//Index
+@import "blocks/index/example.scss";
+@import "blocks/index/features.scss";
+@import "blocks/index/options.scss";
+@import "blocks/index/promo.scss";
+@import "blocks/index/slider.scss";

@@ -1,0 +1,24 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item {
+  border-top: 1px solid #ededed;
+  //list-style-type: none;
+}
+
+.menu__link {
+  font-family: $extra-font-family, $basic-font-family;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-black;
+
+  &:hover,
+  &:focus {
+    color: rgba($color-black, 0.6);
+  }
+}
