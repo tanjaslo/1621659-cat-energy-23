@@ -1,0 +1,14 @@
+.slider {
+  text-align: center;
+}
+
+.slider__img {
+  width: 311px;
+  height: 232px;
+}
+
+.slider-controls__button {
+  @include text-style($extra-font-family, 16px, 20px, $color-black);
+  text-transform: uppercase;
+  border: none;
+}

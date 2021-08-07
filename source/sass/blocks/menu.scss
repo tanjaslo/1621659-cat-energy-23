@@ -1,24 +1,30 @@
 .main-nav__list {
-  margin: 0;
-  padding: 0;
+  @include reset-margin-padding;
 }
 
 .menu__item {
-  border-top: 1px solid #ededed;
-  //list-style-type: none;
+  padding: 23px 0;
+  border-top: 1px solid $border-header;
+
+  &:last-child {
+    border-bottom: 1px solid $border-header;
+  }
 }
 
 .menu__link {
-  font-family: $extra-font-family, $basic-font-family;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
+  @include text-style($extra-font-family, 20px, 20px, $color-black, 500);
   text-transform: uppercase;
-  color: $color-black;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &:hover,
   &:focus {
-    color: rgba($color-black, 0.6);
+    opacity: 0.6;
+  }
+
+  &--current {
+    border-bottom: 2px solid $basic-green;
   }
 }

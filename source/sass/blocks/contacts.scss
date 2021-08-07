@@ -1,0 +1,29 @@
+.contacts {
+  width: 100%;
+}
+
+.contacts__wrapper {
+  padding: 28px 20px 20px 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.contacts__title {
+  @include reset-margin-padding;
+  @include text-style($extra-font-family, 16px, 20px, $color-charcoal);
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  @include reset-margin-padding;
+  @include text-style($basic-font-family, 14px, 20px, $color-darkgrey);
+}
+
+.contacts__location {
+  width: auto;
+  height: 362px;
+  display: block;
+  margin: 0 auto;
+  background-image: url("../../img/location.png") no-repeat;
+}

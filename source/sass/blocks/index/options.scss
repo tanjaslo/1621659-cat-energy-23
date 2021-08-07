@@ -1,0 +1,32 @@
+.options {
+  min-width: 320px;
+}
+
+.options__list {
+  @include reset-margin-padding;
+  list-style: none;
+}
+
+.options__item {
+  background-color: $basic-grey;
+  padding: 0 20px 20px;
+  margin: 20px;
+}
+
+.options__title {
+  @include h3-title;
+  text-transform: uppercase;
+  padding: 30px 0 0 0;
+}
+
+.options__text {
+  padding-bottom: 20px;
+}
+
+.options__link {
+  display: block;
+  padding-top: 19px;
+
+  @include text-style($extra-font-family, 16px, 16px, $color-black);
+  text-transform: uppercase;
+}

@@ -1,0 +1,25 @@
+@mixin reset-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin text-style($font-family, $font-size, $line-height, $color, $font-weight: 400, $font-style: normal) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+@mixin h1-title {
+  @include text-style($extra-font-family, 36px, 36px, $color-white);
+}
+
+@mixin h2-title {
+  @include text-style($extra-font-family, 36px, 40px, $color-black);
+}
+
+@mixin h3-title {
+  @include text-style($extra-font-family, 24px, 37px, $color-black);
+}

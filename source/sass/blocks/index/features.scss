@@ -1,0 +1,11 @@
+.features {
+  margin: 20px;
+}
+
+.features__list {
+  list-style: none;
+}
+
+.features__title {
+  @include h2-title;
+}
