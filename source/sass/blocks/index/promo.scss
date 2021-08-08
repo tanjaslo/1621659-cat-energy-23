@@ -5,7 +5,7 @@
 }
 
 .promo__header {
-  @include h1-title;
+  @include h1-title-white;
   margin: 0;
   padding: 27px 0 25px;
 }
@@ -20,14 +20,4 @@
   height: 270px;
   display: block;
   margin: 0 auto 25px auto;
-}
-
-.promo__link {
-  display: block;
-  width: 100%;
-  padding: 8px 0;
-  background-color: $basic-green;
-
-  @include text-style($extra-font-family, 14px, 18px, $color-white);
-  text-transform: uppercase;
 }

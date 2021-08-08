@@ -1,9 +1,11 @@
 .contacts {
   width: 100%;
+  background-color: $color-white;
+  text-align: left;
 }
 
 .contacts__wrapper {
-  padding: 28px 20px 20px 26px;
+  padding: 28px 20px 26px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr auto;
@@ -21,9 +23,7 @@
 }
 
 .contacts__location {
-  width: auto;
-  height: 362px;
-  display: block;
-  margin: 0 auto;
-  background-image: url("../../img/location.png") no-repeat;
+  width: 320px;
+  //height: 362px;
+  //background-image: url("../../img/location.png") no-repeat;
 }

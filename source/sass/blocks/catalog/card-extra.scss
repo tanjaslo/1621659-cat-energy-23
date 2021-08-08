@@ -1,0 +1,15 @@
+.card-extra {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: solid 1px $border-extra;
+
+  &:first-child {
+    border-top: solid 1px $border-extra;
+  }
+}
+
+.card-extra__title {
+  @include text-style($extra-font-family, 16px, 16px, $color-hardcoal);
+  text-transform: uppercase;
+  text-align: left;
+}

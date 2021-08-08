@@ -1,5 +1,6 @@
 .main-nav__list {
   @include reset-margin-padding;
+  list-style: none;
 }
 
 .menu__item {

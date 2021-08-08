@@ -5,6 +5,8 @@
 @import "global/visually-hidden.scss";
 
 //Blocks
+@import "blocks/button.scss";
+@import "blocks/company-info.scss";
 @import "blocks/contacts.scss";
 @import "blocks/developer.scss";
 @import "blocks/main-nav.scss";
@@ -21,3 +23,10 @@
 @import "blocks/index/options.scss";
 @import "blocks/index/promo.scss";
 @import "blocks/index/slider.scss";
+
+//Catalog
+@import "blocks/catalog/card.scss";
+@import "blocks/catalog/card-extra.scss";
+@import "blocks/catalog/catalog-extra.scss";
+@import "blocks/catalog/catalog-main.scss";
+@import "blocks/catalog/features.scss";
