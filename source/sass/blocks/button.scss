@@ -7,8 +7,9 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &--order,
   &--select,
-  &--order {
+  &--submit {
     @include text-style($extra-font-family, 14px, 18px, $color-white);
     background-color: $basic-green;
   }
@@ -16,5 +17,11 @@
   &--show {
     @include text-style($extra-font-family, 14px, 18px, $color-darkgrey);
     background-color: $basic-grey;
+  }
+
+  &--submit {
+    width: 100%;
+    border: none;
+    cursor: pointer;
   }
 }

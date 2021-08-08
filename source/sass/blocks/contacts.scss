@@ -1,7 +1,14 @@
 .contacts {
   width: 100%;
-  background-color: $color-white;
   text-align: left;
+
+  &--index {
+    background-color: $color-white;
+  }
+
+  &--inner-page {
+    background-color: $basic-grey;
+  }
 }
 
 .contacts__wrapper {
@@ -23,7 +30,8 @@
 }
 
 .contacts__location {
+  display: block;
   width: 320px;
-  //height: 362px;
-  //background-image: url("../../img/location.png") no-repeat;
+  height: 362px;
+  //background: url("../../img/location.png") no-repeat;
 }

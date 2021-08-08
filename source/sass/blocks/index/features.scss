@@ -3,6 +3,7 @@
 }
 
 .features__list {
+  @include reset-margin-padding;
   list-style: none;
 }
 

@@ -1,6 +1,9 @@
 .promo {
   width: 100%;
-  background: linear-gradient(to top, $background-green, $background-green), url("../img/background-promo.jpg") no-repeat center top;
+  background-image: linear-gradient(to top, $background-green, $background-green), url("../img/background-promo.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center top;
+  background-size: 320px 302px, auto 302px;
   text-align: center;
 }
 

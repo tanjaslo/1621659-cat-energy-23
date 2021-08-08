@@ -47,9 +47,9 @@
       </nav>
     </header>
     <main class="page-main">
+      <h1 class="page-main__header">Подбор программы</h1>
       <section class="selection-form">
         <div class="selection-form__wrapper">
-          <h1 class="selection-form__header">Подбор программы</h1>
           <p class="selection-form__description">
             Заполните анкету, и мы подберем<br />
             программу питания для вашего кота
@@ -94,7 +94,7 @@
                 />
               </div>
             </fieldset>
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--bordered">
               <legend class="form__legend visually-hidden">
                 Желаемый результат
               </legend>
@@ -142,7 +142,7 @@
               <div class="form__field text-field">
                 <label class="text-field__label" for="email">E-mail:*</label>
                 <input
-                  class="text-field__control--iconed"
+                  class="text-field__control text-field__control--iconed"
                   id="email"
                   type="email"
                   placeholder="kuklachev@gmail.com"
@@ -152,7 +152,7 @@
               <div class="form__field text-field">
                 <label class="text-field__label" for="phone">Телефон:*</label>
                 <input
-                  class="text-field__control--iconed"
+                  class="text-field__control text-field__control--iconed"
                   id="phone"
                   type="tel"
                   placeholder="8 (960) 900-60-90"
@@ -169,10 +169,9 @@
                   >Комментарий</label
                 >
                 <textarea
-                  class="text-field__control--textarea"
+                  class="text-field__control text-field__control--textarea"
                   id="comment"
                   name="comment"
-                  cols="35"
                   rows="5"
                   placeholder="Расскажите обо всех повадках кота"
                 ></textarea>
@@ -231,7 +230,7 @@
               </ul>
             </fieldset>
             <div class="form__submit">
-              <button class="form__button button" type="submit">
+              <button class="form__button button button--submit" type="submit">
                 Отправить заявку
               </button>
               <small class="form__note">* — Обязательные поля</small>
@@ -241,7 +240,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="contacts">
+      <section class="contacts contacts--inner-page">
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Наши контакты</h2>
           <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>

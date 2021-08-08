@@ -1,0 +1,5 @@
+.radio-field__label {
+  @include text-style($extra-font-family, 16px, 18px, $color-hardcoal);
+  text-transform: uppercase;
+  padding: 13px 0;
+}

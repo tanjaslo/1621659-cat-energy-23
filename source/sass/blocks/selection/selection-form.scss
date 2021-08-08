@@ -1,0 +1,8 @@
+.selection-form {
+  padding: 0 20px;
+}
+
+.selection-form__description {
+  @include text-style($extra-font-family, 14px, 18px, $color-black);
+  text-transform: uppercase;
+}
