@@ -1,0 +1,32 @@
+.text-field {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 13px;
+  text-align: left;
+}
+
+.text-field__label,
+.text-field__control {
+  @include text-style($extra-font-family, 16px, 18px, $color-darkgrey);
+  text-transform: uppercase;
+}
+
+.text-field__label {
+  padding-right: 13px;
+}
+
+.text-field__control {
+  border: 1px solid $border-field;
+  padding: 13px;
+
+  &::placeholder {
+    @include text-style($extra-font-family, 16px, 18px, $color-darkgrey);
+  }
+
+  &--textarea {
+    width: 100%;
+    height: 150px;
+    padding: 9px 15px;
+    resize: none;
+  }
+}

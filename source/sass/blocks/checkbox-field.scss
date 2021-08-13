@@ -1,0 +1,8 @@
+.checkbox-field {
+  margin: 0 0 23px;
+}
+
+.checkbox-field__label {
+  @include text-style($extra-font-family, 16px, 18px, $color-hardcoal);
+  text-transform: uppercase;
+}

@@ -1,0 +1,39 @@
+
+
+.form__group {
+  margin: 0;
+  padding: 20px 0 20px;
+  border: none;
+
+  &--bordered {
+    border-top: 1px solid $basic-border;
+    border-bottom: 1px solid $basic-border;
+  }
+}
+
+.form__legend {
+  @include text-style($extra-font-family, 24px, 26px, $color-black);
+  margin-bottom: 34px;
+  padding-top: 23px;
+}
+
+.form__field {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.form__submit {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form__button {
+  width: 100%;
+  border: none;
+  margin-bottom: 21px;
+}
+
+.form__note {
+  @include text-style($basic-font-family, 14px, 16px, $color-black);
+  display: block;
+}

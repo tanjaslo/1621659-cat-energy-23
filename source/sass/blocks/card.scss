@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+
+  &--last-card {
+    text-align: center;
+
+    .card__title {
+      text-align: center;
+    }
+  }
+}
+
+.card__title {
+  @include text-style($extra-font-family, 16px, 20px, $color-hardcoal);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.card__text {
+  @include text-style($basic-font-family, 12px, 16px, $color-darkgrey);
+  margin-bottom: 25px;
+}
+
+.card__product-link {
+  @include text-style($extra-font-family, 16px, 20px, $color-hardcoal);
+}
+
+.card__order-link {
+  width: 100%;
+}
+
+.card__assortment-link {
+  width: 100%;
+}

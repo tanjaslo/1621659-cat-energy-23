@@ -1,0 +1,31 @@
+.contacts {
+  width: 100%;
+  background-color: $color-white;
+
+  &--inner-page {
+    background-color: $basic-grey;
+  }
+}
+
+.contacts__wrapper {
+  padding: 28px 20px 26px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+}
+
+.contacts__title {
+  @include text-style($extra-font-family, 16px, 20px, $color-charcoal);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contacts__address {
+  @include text-style($basic-font-family, 14px, 20px, $color-darkgrey);
+  margin: 0;
+}
+
+.contacts__map {
+  min-height: 362px;
+  background: $basic-grey url("../img/location.png") no-repeat 0 0/100%;
+}

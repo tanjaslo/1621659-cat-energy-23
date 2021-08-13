@@ -1,0 +1,29 @@
+.developer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.developer__link {
+  text-decoration: none;
+}
+
+.developer__name {
+  display: inline-flex;
+
+  @include text-style($basic-font-family, 16px, 18px, $color-darkgrey);
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.developer__logo {
+  display: inline-flex;
+  margin-left: auto;
+
+  &:active {
+    opacity: 0.3;
+  }
+}

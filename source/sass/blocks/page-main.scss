@@ -1,0 +1,10 @@
+.page-main {
+  display: block;
+  margin: 0 auto;
+}
+
+.page-main__header {
+  @include h1-title-black;
+  margin: 0;
+  padding: 20px 0 37px;
+}

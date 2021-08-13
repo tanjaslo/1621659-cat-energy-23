@@ -1,0 +1,21 @@
+.main-nav {
+  width: 100%;
+  display: block;
+}
+
+.main-nav__toggler {
+  width: 25px;
+  height: 18px;
+  position: absolute;
+  top: 24px;
+  right: 0;
+
+  background-image: url("../img/hamburger.svg");
+  background-color: transparent;
+  border: none;
+}
+
+.main-nav__wrapper {
+  background-color: $color-white;
+  text-align: center;
+}

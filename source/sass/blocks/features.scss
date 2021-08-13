@@ -1,0 +1,19 @@
+.features {
+  padding-top: 24px;
+  padding-bottom: 42px;
+}
+
+.features__title {
+  @include h2-title;
+  margin: 0;
+  padding-bottom: 38px;
+}
+
+.features__text {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.features__item {
+  margin-bottom: 22px;
+}

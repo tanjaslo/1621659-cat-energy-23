@@ -1,0 +1,27 @@
+.programs__item {
+  background-color: $basic-grey;
+  padding: 22px 33px 23px 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.programs__title {
+  @include h3-title;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 29px;
+}
+
+.programs__text {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $basic-border;
+}
+
+.programs__link {
+  @include text-style($extra-font-family, 16px, 16px, $color-black);
+  text-transform: uppercase;
+  display: block;
+}

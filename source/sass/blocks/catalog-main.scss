@@ -1,0 +1,12 @@
+.catalog-main {
+  padding: 20px 0;
+}
+
+.catalog-main__item {
+  padding-bottom: 24px;
+  border-bottom: solid 1px $border-catalog;
+
+  &:first-child {
+    border-top: solid 1px $border-catalog;
+  }
+}

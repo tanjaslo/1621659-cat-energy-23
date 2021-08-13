@@ -1,0 +1,41 @@
+.example {
+  background-color: $color-lightgrey;
+  padding-bottom: 25px;
+}
+
+.example__list {
+  display: flex;
+  justify-content: center;
+  margin: 0 -20px;
+}
+
+.example__title {
+  @include h2-title;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 33px;
+}
+
+.example__item {
+  margin: 0 20px;
+
+  &--description {
+    @include text-style($basic-font-family, 12px, 12px, 400, $color-black);
+  }
+
+  &--number {
+    @include text-style($extra-font-family, 24px, 24px, $color-black);
+    padding: 14px;
+  }
+}
+
+.example__total {
+  @include text-style($extra-font-family, 14px, 20px, $color-black);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.example__text {
+  margin-bottom: 25px;
+}

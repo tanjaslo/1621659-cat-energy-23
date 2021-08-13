@@ -1,0 +1,20 @@
+.slider {
+  text-align: center;
+}
+
+.slider-controls__button {
+  @include text-style($extra-font-family, 16px, 20px, $color-black);
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  padding: 0 10px;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__images {
+  margin-bottom: 23px;
+}
