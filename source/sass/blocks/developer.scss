@@ -11,6 +11,7 @@
 
 .developer__name {
   display: inline-flex;
+
   @include text-style($basic-font-family, 16px, 18px, $color-darkgrey);
 
   &:active {
