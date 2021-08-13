@@ -3,24 +3,29 @@
   background-image: linear-gradient(to top, $background-green, $background-green), url("../img/background-promo.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center top;
-  background-size: 320px 302px, auto 302px;
+  background-size: auto 302px, 320px 302px;
   text-align: center;
+  padding: 27px 0 25px;
 }
 
 .promo__header {
   @include h1-title-white;
   margin: 0;
-  padding: 27px 0 25px;
 }
 
 .promo__slogan {
   @include text-style($extra-font-family, 14px, 14px, $color-white);
-  margin-bottom: 29px;
+  text-transform: uppercase;
+  margin: 29px 0;
 }
 
 .promo__img {
   width: 280px;
   height: 270px;
   display: block;
-  margin: 0 auto 25px auto;
+  margin: 0 auto;
+}
+
+.promo__link {
+  width: 100%;
 }

@@ -1,0 +1,12 @@
+.options-extra {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.options-extra__property,
+.options-extra__description {
+  @include text-style($basic-font-family, 14px, 14px, $color-darkgrey);
+}

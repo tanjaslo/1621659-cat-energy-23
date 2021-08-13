@@ -1,4 +1,5 @@
 //Global
+@import "global/global.scss";
 @import "global/fonts.scss";
 @import "global/mixins.scss";
 @import "global/variables.scss";
@@ -6,34 +7,30 @@
 
 //Blocks
 @import "blocks/button.scss";
+@import "blocks/card.scss";
+@import "blocks/card-extra.scss";
+@import "blocks/catalog-extra.scss";
+@import "blocks/catalog-main.scss";
 @import "blocks/company-info.scss";
 @import "blocks/contacts.scss";
 @import "blocks/developer.scss";
+@import "blocks/example.scss";
+@import "blocks/features.scss";
+@import "blocks/form.scss";
+@import "blocks/list-reset.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/menu.scss";
+@import "blocks/options.scss";
+@import "blocks/options-extra.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-main.scss";
+@import "blocks/programs.scss";
+@import "blocks/promo.scss";
+@import "blocks/slider.scss";
 @import "blocks/social.scss";
-
-//Index
-@import "blocks/index/example.scss";
-@import "blocks/index/features.scss";
-@import "blocks/index/options.scss";
-@import "blocks/index/promo.scss";
-@import "blocks/index/slider.scss";
-
-//Catalog
-@import "blocks/catalog/card.scss";
-@import "blocks/catalog/card-extra.scss";
-@import "blocks/catalog/catalog-extra.scss";
-@import "blocks/catalog/catalog-main.scss";
-@import "blocks/catalog/features.scss";
-
-//Selection
-@import "blocks/selection/form.scss";
-@import "blocks/selection/selection-form.scss";
-@import "blocks/selection/checkbox-field.scss";
-@import "blocks/selection/radio-field.scss";
-@import "blocks/selection/text-field.scss";
+@import "blocks/questionnaire.scss";
+@import "blocks/checkbox-field.scss";
+@import "blocks/radio-field.scss";
+@import "blocks/text-field.scss";

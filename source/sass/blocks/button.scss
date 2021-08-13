@@ -1,27 +1,20 @@
 .button {
-  width: 280px;
-  display: block;
-  margin: 0 auto;
-  padding: 8px 0;
+  display: inline-flex; // inline-grid;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 20px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 
-  &--order,
-  &--select,
-  &--submit {
+  &--primary {
     @include text-style($extra-font-family, 14px, 18px, $color-white);
     background-color: $basic-green;
   }
 
-  &--show {
+  &--secondary {
     @include text-style($extra-font-family, 14px, 18px, $color-darkgrey);
     background-color: $basic-grey;
-  }
-
-  &--submit {
-    width: 100%;
-    border: none;
-    cursor: pointer;
   }
 }

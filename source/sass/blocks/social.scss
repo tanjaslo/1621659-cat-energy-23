@@ -1,10 +1,7 @@
 .social {
-  //@include reset-margin-padding;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
 }
 
-.social__item {
-  display: block;
-}

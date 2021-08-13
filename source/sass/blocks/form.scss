@@ -1,5 +1,8 @@
+
+
 .form__group {
-  margin-bottom: 23px;
+  margin: 0;
+  padding: 20px 0 20px;
   border: none;
 
   &--bordered {
@@ -11,10 +14,7 @@
 .form__legend {
   @include text-style($extra-font-family, 24px, 26px, $color-black);
   margin-bottom: 34px;
-}
-
-.form__list {
-  @include reset-margin-padding;
+  padding-top: 23px;
 }
 
 .form__field {
@@ -27,8 +27,13 @@
   margin-bottom: 32px;
 }
 
+.form__button {
+  width: 100%;
+  border: none;
+  margin-bottom: 21px;
+}
+
 .form__note {
   @include text-style($basic-font-family, 14px, 16px, $color-black);
   display: block;
-  padding-top: 21px;
 }

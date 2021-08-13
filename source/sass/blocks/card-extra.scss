@@ -1,6 +1,7 @@
 .card-extra {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   border-bottom: solid 1px $border-extra;
 
   &:first-child {
@@ -11,5 +12,9 @@
 .card-extra__title {
   @include text-style($extra-font-family, 16px, 16px, $color-hardcoal);
   text-transform: uppercase;
-  text-align: left;
+  width: 100%;
+}
+
+.card-extra__order-link {
+  width: 100%;
 }

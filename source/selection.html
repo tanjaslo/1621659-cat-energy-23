@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <title>Каталог Cat Energy</title>
   </head>
@@ -32,7 +32,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list menu">
+          <ul class="main-nav__list menu list-reset">
             <li class="menu__item">
               <a class="menu__link" href="index.html">Главная</a>
             </li>
@@ -40,7 +40,7 @@
               <a class="menu__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="menu__item menu__item--active">
-              <a class="menu__link menu__link--current" href="#">Подбор программы</a>
+              <a class="menu__link menu__link" href="#">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -48,13 +48,16 @@
     </header>
     <main class="page-main">
       <h1 class="page-main__header">Подбор программы</h1>
-      <section class="selection-form">
-        <div class="selection-form__wrapper">
-          <p class="selection-form__description">
-            Заполните анкету, и мы подберем<br />
-            программу питания для вашего кота
+      <section class="questionnaire">
+        <div class="questionnaire__wrapper">
+          <p class="questionnaire__description">
+            Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
-          <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <form
+            class="questionnaire__form form"
+            action="https://echo.htmlacademy.ru"
+            method="POST"
+          >
             <fieldset class="form__group">
               <legend class="form__legend visually-hidden">
                 Заполнить данные о питомце
@@ -82,9 +85,7 @@
                 />
               </div>
               <div class="form__field text-field">
-                <label class="text-field__label" for="age"
-                  >Возраст (лет):</label
-                >
+                <label class="text-field__label" for="age" >Возраст (лет):</label>
                 <input
                   class="text-field__control"
                   id="age"
@@ -98,7 +99,7 @@
               <legend class="form__legend visually-hidden">
                 Желаемый результат
               </legend>
-              <ul class="form__list">
+              <ul class="form__list list-reset">
                 <li class="form__field radio-field">
                   <label class="radio-field__label" for="slim">
                     <input
@@ -108,8 +109,8 @@
                       name="slim"
                       value="slim"
                       checked
-                    />Похудение</label
-                  >
+                    />Похудение
+                  </label>
                 </li>
                 <li class="form__field radio-field">
                   <label class="radio-field__label" for="gain">
@@ -119,8 +120,8 @@
                       type="radio"
                       name="gain"
                       value="gain"
-                    />Набор массы</label
-                  >
+                    />Набор массы
+                  </label>
                 </li>
                 <li class="form__field radio-field">
                   <label class="radio-field__label" for="advice">
@@ -165,9 +166,9 @@
                 Комментарий
               </legend>
               <div class="form__field text-field">
-                <label class="text-field__label visually-hidden" for="comment"
-                  >Комментарий</label
-                >
+                <label class="text-field__label visually-hidden" for="comment">
+                  Комментарий
+                </label>
                 <textarea
                   class="text-field__control text-field__control--textarea"
                   id="comment"
@@ -181,7 +182,7 @@
               <legend class="form__legend form__legend--title-line">
                 Дополнительно
               </legend>
-              <ul class="form__list">
+              <ul class="form__list list-reset">
                 <li class="form__field checkbox-field">
                   <label class="checkbox-field__label" for="sweetener">
                     <input
@@ -191,8 +192,8 @@
                       name="sweetener"
                       value="sweetener"
                       checked
-                    />Cахарозаменитель</label
-                  >
+                    />Cахарозаменитель
+                  </label>
                 </li>
                 <li class="form__field checkbox-field">
                   <label class="checkbox-field__label" for="water">
@@ -202,8 +203,8 @@
                       type="checkbox"
                       name="water"
                       value="water"
-                    />Питьевая вода</label
-                  >
+                    />Питьевая вода
+                  </label>
                 </li>
                 <li class="form__field checkbox-field">
                   <label class="checkbox-field__label" for="milk">
@@ -213,8 +214,8 @@
                       type="checkbox"
                       name="milk"
                       value="milk"
-                    />Молоко</label
-                  >
+                    />Молоко
+                  </label>
                 </li>
                 <li class="form__field checkbox-field">
                   <label class="checkbox-field__label" for="vitamins">
@@ -224,13 +225,13 @@
                       type="checkbox"
                       name="vitamins"
                       value="vitamins"
-                    />Витамины</label
-                  >
+                    />Витамины
+                  </label>
                 </li>
               </ul>
             </fieldset>
             <div class="form__submit">
-              <button class="form__button button button--submit" type="submit">
+              <button class="form__button button button--primary" type="submit">
                 Отправить заявку
               </button>
               <small class="form__note">* — Обязательные поля</small>
@@ -240,77 +241,80 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="contacts contacts--inner-page">
-        <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Наши контакты</h2>
-          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts--inner-page">
+          <div class="contacts__wrapper">
+            <h2 class="visually-hidden">Наши контакты</h2>
+            <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </address>
+          </div>
+          <div class="contacts__map"></div>
         </div>
-        <img
-          class="contacts__location"
-          src="img/location.png"
-          width="320"
-          height="362"
-          alt="Офис компании Cat Energy на карте"
-        />
-      </section>
-      <section class="company-info">
-        <a
-          class="page-footer__logo-link"
-          aria-label="Перейти на главную страницу"
-          href="#"
-        >
-          <img
-            class="page-footer__logo-text"
-            src="img/logo-mobile-text.svg"
-            width="128"
-            height="24"
-            alt="Текстовый логотип сайта Cat energy"
-          />
-        </a>
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a
-              class="social__link social__link--vkontakte"
-              href="https://vk.com/htmlacademy"
-              target="_blank"
-              rel="noopener"
-            >
-              <span class="visually-hidden">Мы во Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--instagram"
-              href="https://www.instagram.com/htmlacademy"
-              target="_blank"
-              rel="noopener"
-            >
-              <span class="visually-hidden">Мы в Инстаграме</span></a
-            >
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--facebook"
-              href="https://www.facebook.com/htmlacademy"
-              target="_blank"
-              rel="noopener"
-            >
-              <span class="visually-hidden">Мы в Фейсбуке</span></a
-            >
-          </li>
-        </ul>
+        <div class="page-footer__company-info company-info">
+          <a
+            class="company-info__logo-link"
+            aria-label="Перейти на главную страницу"
+            href="#"
+          >
+            <img
+              class="company-info__logo-text"
+              src="img/logo-mobile-text.svg"
+              width="128"
+              height="24"
+              alt="Текстовый логотип сайта Cat energy"
+            />
+          </a>
+          <ul class="company-info__social social list-reset">
+            <li class="social__item">
+              <a
+                class="social__link social__link--vkontakte"
+                href="https://vk.com/htmlacademy"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="visually-hidden">Мы во Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--instagram"
+                href="https://www.instagram.com/htmlacademy"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="visually-hidden">Мы в Инстаграме</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--facebook"
+                href="https://www.facebook.com/htmlacademy"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="page-footer__developer developer">
           <a
-            class="developer__link"
+            class="developer__name-link"
             href="https://htmlacademy.ru/intensive/adaptive"
             target="_blank"
             rel="noopener"
           >
             <span class="developer__name">HTML Academy</span>
-            <img
+          </a>
+          <a
+          class="developer__logo-link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+          target="_blank"
+          rel="noopener"
+          >
+          <img
               class="developer__logo"
               src="img/html-academy.svg"
               width="27"
@@ -319,7 +323,7 @@
             />
           </a>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

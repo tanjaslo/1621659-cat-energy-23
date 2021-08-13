@@ -32,9 +32,9 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list menu">
+          <ul class="main-nav__list menu list-reset">
             <li class="menu__item menu__item--active">
-              <a class="menu__link menu__link--current" href="#">Главная</a>
+              <a class="menu__link menu__link" href="#">Главная</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="catalog.html">Каталог продукции</a>
@@ -58,34 +58,32 @@
           alt="Cat energy Pro со вкусом курицы"
         />
         <a
-          class="promo__link button button--select"
+          class="promo__link button button--primary"
           href="selection.html"
-          aria-label="Перейти на страницу выбора программы"
-          >Подобрать программу</a
         >
+          Подобрать программу
+        </a>
       </section>
-      <section class="options">
+      <section class="programs">
         <div class="options__wrapper">
           <h2 class="visually-hidden">Выбор программ питания</h2>
-          <ul class="options__list">
-            <li class="options__item">
-              <h3 class="options__title options__title--slim">Похудение</h3>
-              <p class="options__text">
+          <ul class="programs__list list-reset">
+            <li class="programs__item">
+              <h3 class="programs__title options__title--slim">Похудение</h3>
+              <p class="programs__text">
                 Ваш кот весит больше собаки и почти утратил способность лазить
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
-              <hr />
-              <a class="options__link" href="catalog.html">Каталог Slim</a>
+              <a class="programs__link" href="catalog.html">Каталог Slim</a>
             </li>
-            <li class="options__item">
-              <h3 class="options__title options__title--pro">Набор массы</h3>
-              <p class="options__text">
+            <li class="programs__item">
+              <h3 class="programs__title options__title--pro">Набор массы</h3>
+              <p class="programs__text">
                 Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <hr />
-              <a class="options__link" href="catalog.html">Каталог Pro</a>
+              <a class="programs__link" href="catalog.html">Каталог Pro</a>
             </li>
           </ul>
         </div>
@@ -93,7 +91,7 @@
       <section class="features">
         <div class="features__wrapper">
           <h2 class="features__title">Как это работает</h2>
-          <ul class="features__list">
+          <ol class="features__list list-reset">
             <li class="features__item features__item--nutrients">
               <p class="features__text">
                 Функциональное питание содержит только полезные питательные
@@ -118,7 +116,7 @@
                 питомца!
               </p>
             </li>
-          </ul>
+          </ol>
         </div>
       </section>
       <section class="example">
@@ -179,77 +177,80 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="contacts contacts--index">
-        <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Наши контакты</h2>
-          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <div class="contacts__wrapper">
+            <h2 class="visually-hidden">Наши контакты</h2>
+            <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </address>
+          </div>
+          <div class="contacts__map"></div>
         </div>
-        <img
-          class="contacts__location"
-          src="img/location.png"
-          width="320"
-          height="362"
-          alt="Офис компании Cat Energy на карте"
-        />
-      </section>
-      <section class="company-info">
-        <a
-          class="page-footer__logo-link"
-          aria-label="Перейти на главную страницу"
-          href="#"
-        >
-          <img
-            class="page-footer__logo-text"
-            src="img/logo-mobile-text.svg"
-            width="128"
-            height="24"
-            alt="Текстовый логотип сайта Cat energy"
-          />
-        </a>
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a
-              class="social__link social__link--vkontakte"
-              href="https://vk.com/htmlacademy"
-              target="_blank"
-              rel="noopener"
-            >
-              <span class="visually-hidden">Мы во Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--instagram"
-              href="https://www.instagram.com/htmlacademy"
-              target="_blank"
-              rel="noopener"
-            >
-              <span class="visually-hidden">Мы в Инстаграме</span></a
-            >
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--facebook"
-              href="https://www.facebook.com/htmlacademy"
-              target="_blank"
-              rel="noopener"
-            >
-              <span class="visually-hidden">Мы в Фейсбуке</span></a
-            >
-          </li>
-        </ul>
+        <div class="page-footer__company-info company-info">
+          <a
+            class="company-info__logo-link"
+            aria-label="Перейти на главную страницу"
+            href="#"
+          >
+            <img
+              class="company-info__logo-text"
+              src="img/logo-mobile-text.svg"
+              width="128"
+              height="24"
+              alt="Текстовый логотип сайта Cat energy"
+            />
+          </a>
+          <ul class="company-info__social social list-reset">
+            <li class="social__item">
+              <a
+                class="social__link social__link--vkontakte"
+                href="https://vk.com/htmlacademy"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="visually-hidden">Мы во Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--instagram"
+                href="https://www.instagram.com/htmlacademy"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="visually-hidden">Мы в Инстаграме</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--facebook"
+                href="https://www.facebook.com/htmlacademy"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="page-footer__developer developer">
           <a
-            class="developer__link"
+            class="developer__name-link"
             href="https://htmlacademy.ru/intensive/adaptive"
             target="_blank"
             rel="noopener"
           >
             <span class="developer__name">HTML Academy</span>
-            <img
+          </a>
+          <a
+          class="developer__logo-link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+          target="_blank"
+          rel="noopener"
+          >
+          <img
               class="developer__logo"
               src="img/html-academy.svg"
               width="27"
@@ -258,7 +259,7 @@
             />
           </a>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

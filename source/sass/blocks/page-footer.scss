@@ -1,30 +1,7 @@
 .page-footer {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
   background-color: $basic-grey;
   text-align: center;
-}
-
-.page-footer__logo-text {
-  width: 128px;
-  height: 24px;
-  padding-top: 38px;
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
-}
-
-.page-footer__social {
-  padding: 28px 20px 20px 26px;
-  border-top: 1px solid $basic-border;
-  border-bottom: 1px solid $basic-border;
-  list-style: none;
 }
 
 .page-footer__developer {

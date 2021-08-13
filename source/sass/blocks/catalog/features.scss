@@ -1,9 +1,0 @@
-.features__property,
-.features__description {
-  @include text-style($basic-font-family, 12px, 16px, $color-darkgrey);
-}
-
-.features-extra__property,
-.features-extra__description {
-  @include text-style($basic-font-family, 14px, 14px, $color-darkgrey);
-}

@@ -5,16 +5,9 @@
 .page__body {
   min-width: 320px;
   min-height: 100%;
+  margin: 0;
   background-color: $color-white;
 
-  @include reset-margin-padding;
   @include text-style($basic-font-family, 14px, 18px, $color-darkgrey);
 }
 
-.page__body a {
-  text-decoration: none;
-}
-
-// .page__body ul {
-// list-style: none;
-// }
