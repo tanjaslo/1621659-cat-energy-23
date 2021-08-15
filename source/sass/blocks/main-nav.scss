@@ -9,10 +9,14 @@
   position: absolute;
   top: 24px;
   right: 0;
-
   background-image: url("../img/hamburger.svg");
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__wrapper {

@@ -4,7 +4,7 @@
 }
 
 .features__title {
-  @include h2-title;
+  @include text-style($extra-font-family, 36px, 40px, $color-black);
   margin: 0;
   padding-bottom: 38px;
 }

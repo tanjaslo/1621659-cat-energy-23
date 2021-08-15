@@ -7,18 +7,3 @@
   font-style: $font-style;
 }
 
-@mixin h1-title-white {
-  @include text-style($extra-font-family, 36px, 36px, $color-white);
-}
-
-@mixin h1-title-black {
-  @include text-style($extra-font-family, 36px, 36px, $color-black);
-}
-
-@mixin h2-title {
-  @include text-style($extra-font-family, 36px, 40px, $color-black);
-}
-
-@mixin h3-title {
-  @include text-style($extra-font-family, 24px, 37px, $color-black);
-}

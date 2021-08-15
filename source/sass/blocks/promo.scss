@@ -6,17 +6,29 @@
   background-size: auto 302px, 320px 302px;
   text-align: center;
   padding: 27px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .promo__header {
-  @include h1-title-white;
+  @include text-style($extra-font-family, 36px, 36px, $color-white);
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include text-style($extra-font-family, 60px, 60px, $color-black);
+  }
 }
 
 .promo__slogan {
   @include text-style($extra-font-family, 14px, 14px, $color-white);
   text-transform: uppercase;
   margin: 29px 0;
+
+  @media (min-width: $tablet-width) {
+    @include text-style($extra-font-family, 20px, 20px, $color-black);
+  }
 }
 
 .promo__img {

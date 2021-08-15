@@ -23,7 +23,7 @@
 }
 
 .options__title {
-  @include h3-title;
+  @include text-style($extra-font-family, 24px, 37px, $color-black);
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 29px;
