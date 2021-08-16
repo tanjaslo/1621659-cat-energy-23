@@ -1,14 +1,20 @@
 .promo {
   width: 100%;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: 27px 0 25px;
+
   background-image: linear-gradient(to top, $background-green, $background-green), url("../img/background-promo.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center top;
   background-size: auto 302px, 320px 302px;
-  text-align: center;
-  padding: 27px 0 25px;
 
   @media (min-width: $tablet-width) {
-    text-align: left;
+    background: none;
+    justify-content: start;
+    justify-items: start;
+    padding: 62px 0 0 117px;
   }
 }
 
@@ -28,16 +34,29 @@
 
   @media (min-width: $tablet-width) {
     @include text-style($extra-font-family, 20px, 20px, $color-black);
+    margin: 41px 0 49px;
   }
 }
 
 .promo__img {
-  width: 280px;
-  height: 270px;
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3/5;
+    grid-column: 1/2;
+    margin-left: -35px;
+    margin-top: -15px;
+  }
 }
 
 .promo__link {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    z-index: 1;
+  }
 }

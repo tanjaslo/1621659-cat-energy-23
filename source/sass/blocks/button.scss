@@ -8,13 +8,27 @@
   text-transform: uppercase;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+  }
+
   &--primary {
     @include text-style($extra-font-family, 14px, 18px, $color-white);
     background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   &--secondary {
     @include text-style($extra-font-family, 14px, 18px, $color-darkgrey);
     background-color: $basic-grey;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }
