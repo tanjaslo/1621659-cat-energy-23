@@ -1,15 +1,78 @@
 .page-header {
-  display: block;
   padding-top: 12px;
-  position: relative;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &--index {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+
+        display: block;
+        width: 50%;
+        height: 694px;
+
+        background: url("../img/index-background-desktop.jpg") $background-green;
+        background-repeat: no-repeat;
+        background-size: 720px 100%;
+      }
+    }
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  //padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
+}
+
+.page-header__logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
 }
 
 .page-header__logo-image {
-  width: 34px;
-  height: 38px;
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
 }
 
 .page-header__logo-text {
   width: 101px;
   height: 18px;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-link {
+  &--text {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }

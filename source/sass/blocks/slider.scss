@@ -1,5 +1,7 @@
 .slider {
+  display: grid;
   text-align: center;
+  background-color: $color-lightgrey;
 }
 
 .slider-controls__button {
@@ -8,6 +10,11 @@
   background-color: transparent;
   border: none;
   padding: 0 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .slider-controls {

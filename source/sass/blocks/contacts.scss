@@ -1,6 +1,7 @@
 .contacts {
   width: 100%;
   background-color: $color-white;
+  position: relative;
 
   &--inner-page {
     background-color: $basic-grey;
@@ -12,17 +13,39 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: left;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 50%;
+    top: 95px;
+
+    width: 570px;
+    margin-left: calc(100vw / 2 - 1280px / 2 + 40px);
+    padding-right: 89px;
+    padding-left: 76px;
+    column-gap: 11px;
+    background-color: $color-white;
+  }
 }
 
 .contacts__title {
   @include text-style($extra-font-family, 16px, 20px, $color-charcoal);
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contacts__address {
   @include text-style($basic-font-family, 14px, 20px, $color-darkgrey);
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .contacts__map {
