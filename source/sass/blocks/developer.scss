@@ -2,6 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 22px 0;
+  border-bottom: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .developer__name {
@@ -12,7 +18,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-right: 22px;
+    padding: 0;
+    margin-right: 22px;
   }
 }
 

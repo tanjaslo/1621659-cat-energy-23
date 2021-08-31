@@ -13,8 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(auto-fill, minmax(570px, 1fr));
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
     gap: 80px;
   }
 }
@@ -32,12 +31,12 @@
   @include text-style($extra-font-family, 24px, 37px, $color-black);
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 29px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
 }
 

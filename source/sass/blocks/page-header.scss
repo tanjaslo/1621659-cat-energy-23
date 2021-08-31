@@ -1,54 +1,46 @@
 .page-header {
   padding-top: 12px;
+}
 
-  @media (min-width: $desktop-width) {
-    position: relative;
+.page-header__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding: 24px 30px;
+  }
 
-    &--index {
+  &--index {
+    @media (min-width: $desktop-width) {
+      padding-top: 53px;
+      position: relative;
+
       &::before {
         content: "";
         position: absolute;
         top: 0;
-        right: 0;
+        right: -90px;
         z-index: -1;
 
         display: block;
-        width: 50%;
+        width: 720px;
         height: 694px;
 
-        background: url("../img/index-background-desktop.jpg") $background-green;
-        background-repeat: no-repeat;
-        background-size: 720px 100%;
+        background: url("../img/index-background-desktop.jpg"), $background-green;
+        background-repeat: no-repeat, no-repeat;
       }
     }
   }
 }
 
-.page-header__wrapper {
-  display: flex;
-  flex-direction: column;
-  //padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 53px;
-  }
-}
-
 .page-header__logo {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
 
   @media (min-width: $tablet-width) {
     width: 174px;
+    margin-right: 95px;
   }
 }
 
