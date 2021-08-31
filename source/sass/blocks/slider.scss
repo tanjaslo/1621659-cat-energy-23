@@ -1,4 +1,7 @@
 .slider {
+  position: relative;
+  z-index: 1;
+  display: grid;
   text-align: center;
 }
 
@@ -8,6 +11,11 @@
   background-color: transparent;
   border: none;
   padding: 0 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .slider-controls {
@@ -16,5 +24,20 @@
 }
 
 .slider__images {
+  justify-self: center;
+}
+
+.slider__img {
+  display: block;
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
+    height: 536px;
+  }
 }

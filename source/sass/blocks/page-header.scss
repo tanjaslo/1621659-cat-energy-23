@@ -1,15 +1,70 @@
 .page-header {
-  display: block;
   padding-top: 12px;
-  position: relative;
+}
+
+.page-header__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding: 24px 30px;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      padding-top: 53px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -90px;
+        z-index: -1;
+
+        display: block;
+        width: 720px;
+        height: 694px;
+
+        background: url("../img/index-background-desktop.jpg"), $background-green;
+        background-repeat: no-repeat, no-repeat;
+      }
+    }
+  }
+}
+
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    margin-right: 95px;
+  }
 }
 
 .page-header__logo-image {
-  width: 34px;
-  height: 38px;
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
 }
 
 .page-header__logo-text {
   width: 101px;
   height: 18px;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-link {
+  &--text {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
