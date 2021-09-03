@@ -62,12 +62,12 @@
     line-height: 30px;
     font-weight: 400;
 
-    &--current {
-      border-bottom: 2px solid $color-white;
-    }
-
     &--index {
       color: $color-white;
+    }
+
+    &--current {
+      border-bottom: 2px solid $color-white;
     }
   }
 }

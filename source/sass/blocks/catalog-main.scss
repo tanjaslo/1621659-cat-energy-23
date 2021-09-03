@@ -2,11 +2,17 @@
   padding: 20px 0;
 }
 
-.catalog-main__item {
-  padding-bottom: 24px;
-  border-bottom: solid 1px $border-catalog;
+.catalog-main__list {
+  display: grid;
+  gap: 25px;
 
-  &:first-child {
-    border-top: solid 1px $border-catalog;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    gap: 80px;
   }
 }
