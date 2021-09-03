@@ -10,10 +10,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    //border: 2px solid #ff0000;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,6 +47,7 @@
 
 .card-extra__order-link {
   width: 100%;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-column: 1 / -1;

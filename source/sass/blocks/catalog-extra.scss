@@ -11,8 +11,6 @@
 }
 
 .catalog-extra__list {
-  margin-bottom: 36px;
-
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
   }
@@ -26,15 +24,21 @@
 
 .catalog-extra__present {
   height: 289px;
-  background: url("../img/gift-photo-mobile.jpg") $basic-green;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 280px 100%;
+  background: linear-gradient($background-green, $background-green), url("../img/gift-photo-mobile.jpg") no-repeat center center / cover;
+  //background-size: 280px 100%;
   text-align: center;
+  margin-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient($background-green, $background-green), url("../img/gift-photo-tablet.jpg") no-repeat center center / cover;
+    margin-top: 69px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / -1;
+    background: linear-gradient($background-green, $background-green), url("../img/gift-photo-desktop.jpg") no-repeat center center / cover;
     background-size: 245px 100%;
+    margin-top: 0;
   }
 }
 
