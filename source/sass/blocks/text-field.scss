@@ -1,14 +1,27 @@
 .text-field {
-  width: 100%;
-  display: inline-block;
-  margin-bottom: 13px;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
   text-align: left;
+  margin-bottom: 13px;
 }
 
 .text-field__label,
 .text-field__control {
   @include text-style($extra-font-family, 16px, 18px, $color-darkgrey);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .text-field__label {
@@ -18,9 +31,15 @@
 .text-field__control {
   border: 1px solid $border-field;
   padding: 13px;
+  flex-grow: 1;
 
   &::placeholder {
     @include text-style($extra-font-family, 16px, 18px, $color-darkgrey);
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &--textarea {

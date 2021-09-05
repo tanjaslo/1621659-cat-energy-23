@@ -1,20 +1,78 @@
+.form {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
 
+.form__list {
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
 
 .form__group {
   margin: 0;
-  padding: 20px 0 20px;
+  margin-bottom: 23px;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    &:nth-of-type(3) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 80px;
+    }
+  }
 
   &--bordered {
     border-top: 1px solid $basic-border;
     border-bottom: 1px solid $basic-border;
+
+    @media (min-width: $tablet-width) {
+      border: 1px solid $basic-border;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 220px; // ??
+      padding-top: 12px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &--info {
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
   }
 }
 
 .form__legend {
   @include text-style($extra-font-family, 24px, 26px, $color-black);
+  margin: 0;
   margin-bottom: 34px;
-  padding-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 71px;
+  }
 }
 
 .form__field {
@@ -22,18 +80,39 @@
   flex-wrap: nowrap;
 }
 
-.form__submit {
-  text-align: center;
-  margin-bottom: 32px;
-}
-
 .form__button {
   width: 100%;
   border: none;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 282px;
+  }
 }
 
 .form__note {
   @include text-style($basic-font-family, 14px, 16px, $color-black);
-  display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin-left: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 81px;
+  }
+}
+
+.form__submit {
+  text-align: center;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    justify-items: flex-start;
+    margin-bottom: 71px;
+    display: flex;
+  }
 }
