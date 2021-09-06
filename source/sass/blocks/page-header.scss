@@ -1,14 +1,4 @@
 .page-header {
-  padding-top: 12px;
-}
-
-.page-header__wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    padding: 24px 30px;
-  }
-
   &--index {
     @media (min-width: $desktop-width) {
       padding-top: 53px;
@@ -18,17 +8,24 @@
         content: "";
         position: absolute;
         top: 0;
-        right: -90px;
+        right: 0;
         z-index: -1;
 
         display: block;
-        width: 720px;
+        width: 50%;
         height: 694px;
-
-        background: url("../img/index-background-desktop.jpg"), $background-green;
-        background-repeat: no-repeat, no-repeat;
+        background: linear-gradient(to top, $background-green, $background-green), url("../img/index-background-desktop.png") no-repeat center center / cover;
+        background-color: $background-green;
       }
     }
+  }
+}
+
+.page-header__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding: 24px 30px;
   }
 }
 

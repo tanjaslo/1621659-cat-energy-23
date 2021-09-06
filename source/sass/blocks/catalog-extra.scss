@@ -19,13 +19,18 @@
 .catalog-extra__title {
   @include text-style($extra-font-family, 24px, 24px, $color-black);
   margin: 0;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
 }
 
 .catalog-extra__present {
   height: 289px;
   background: linear-gradient($background-green, $background-green), url("../img/gift-photo-mobile.jpg") no-repeat center center / cover;
-  //background-size: 280px 100%;
   text-align: center;
   margin-top: 36px;
 
@@ -39,10 +44,12 @@
     background: linear-gradient($background-green, $background-green), url("../img/gift-photo-desktop.jpg") no-repeat center center / cover;
     background-size: 245px 100%;
     margin-top: 0;
+    display: flex;
+    align-items: flex-end;
   }
 }
 
 .catalog-extra__present-text {
   @include text-style($basic-font-family, 16px, 20px, $color-white);
-  padding: 186px 61px 43px 58px;
+  padding: 40px 61px 43px 58px;
 }

@@ -1,11 +1,8 @@
 .options-extra {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  align-content: center;
-  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -13,18 +10,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-    justify-self: auto;
+    width: 30%;
+    margin-left: auto;
   }
 }
 
 .options-extra__property,
 .options-extra__description {
   @include text-style($basic-font-family, 14px, 14px, $color-darkgrey);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .options-extra__description {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-left: 49px;
   }
 }

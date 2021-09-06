@@ -33,6 +33,10 @@
   padding: 13px;
   flex-grow: 1;
 
+  @media (min-width: $tablet-width) {
+    padding: 11px;
+  }
+
   &::placeholder {
     @include text-style($extra-font-family, 16px, 18px, $color-darkgrey);
 

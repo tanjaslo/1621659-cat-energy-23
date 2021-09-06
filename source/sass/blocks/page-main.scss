@@ -7,17 +7,17 @@
   @include text-style($extra-font-family, 36px, 36px, $color-black);
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 37px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     padding-top: 65px;
-    padding-bottom: 82px;
+    margin-bottom: 82px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 74px;
-    padding-bottom: 84px;
+    margin-bottom: 84px;
   }
 }
