@@ -60,11 +60,11 @@
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__header">Подбор программы</h1>
       <section class="questionnaire">
-        <div class="questionnaire__wrapper">
+        <div class="questionnaire__wrapper wrapper">
+          <h1 class="page-main__header">Подбор программы</h1>
           <p class="questionnaire__description">
-            Заполните анкету, и мы подберем программу питания для вашего кота
+            Заполните анкету, и мы подберем<br /> программу питания для вашего кота
           </p>
           <form
             class="questionnaire__form form"
@@ -98,7 +98,7 @@
                 />
               </div>
               <div class="form__field text-field">
-                <label class="text-field__label" for="age" >Возраст (лет):</label>
+                <label class="text-field__label" for="age">Возраст (лет):</label>
                 <input
                   class="text-field__control"
                   id="age"
@@ -149,9 +149,9 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--info">
               <legend class="form__legend form__legend--title-line">
-                <span>Контактные данные&nbsp;<br />(владельца кота)</span>
+                <span>Контактные данные (владельца кота)</span>
               </legend>
               <div class="form__field text-field">
                 <label class="text-field__label" for="email">E-mail:*</label>
@@ -174,7 +174,7 @@
                 />
               </div>
             </fieldset>
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--info">
               <legend class="form__legend form__legend--title-line">
                 Комментарий
               </legend>
@@ -191,11 +191,11 @@
                 ></textarea>
               </div>
             </fieldset>
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--info">
               <legend class="form__legend form__legend--title-line">
                 Дополнительно
               </legend>
-              <ul class="form__list list-reset">
+              <ul class="form__list form__list--checkbox list-reset">
                 <li class="form__field checkbox-field">
                   <label class="checkbox-field__label" for="sweetener">
                     <input
@@ -254,7 +254,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
+      <div class="page-footer__contacts contacts contacts--inner-page">
         <div class="contacts__wrapper wrapper">
           <div class="contacts__info">
             <h2 class="visually-hidden">Наши контакты</h2>

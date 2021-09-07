@@ -5,4 +5,9 @@
 .checkbox-field__label {
   @include text-style($extra-font-family, 16px, 18px, $color-hardcoal);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

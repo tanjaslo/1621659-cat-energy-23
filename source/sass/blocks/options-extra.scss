@@ -3,10 +3,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    justify-self: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+    margin-left: auto;
+  }
 }
 
 .options-extra__property,
 .options-extra__description {
   @include text-style($basic-font-family, 14px, 14px, $color-darkgrey);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.options-extra__description {
+  @media (min-width: $tablet-width) {
+    margin-left: 49px;
+  }
 }
