@@ -45,15 +45,20 @@
     border-bottom: 1px solid $basic-border;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-right: -20px;
+    margin-left: -20px;
 
     @media (min-width: $tablet-width) {
       border: 1px solid $basic-border;
+      margin-right: 0;
+      margin-left: 0;
     }
 
     @media (min-width: $desktop-width) {
-      height: 200px; // ??
       padding-top: 13px;
       padding-bottom: 13px;
+      display: flex;
+      align-items: center;
     }
   }
 

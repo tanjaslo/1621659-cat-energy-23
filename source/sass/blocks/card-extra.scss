@@ -23,9 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    //grid-auto-flow: column;
     grid-template-columns: 1fr 1fr 245px;
-    //grid-template-rows: auto;
     column-gap: 38px;
     padding-top: 15px;
     padding-bottom: 17px;
@@ -38,20 +36,15 @@
   margin: 0;
   display: inline-block;
   align-self: center;
-  //padding-top: 13px;
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    //padding-top: 25px;
-    //padding-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
-    //padding-top: 10px;
-    //padding-bottom: 12px;
   }
 }
 
