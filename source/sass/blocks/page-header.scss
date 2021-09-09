@@ -1,4 +1,6 @@
 .page-header {
+  //position: relative;
+
   &--index {
     @media (min-width: $desktop-width) {
       padding-top: 53px;
@@ -35,13 +37,27 @@
   justify-content: space-between;
   flex-shrink: 0;
 
+  @media (max-width: $mobile-width-only) {
+    padding-top: 10px;
+    padding-bottom: 17px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 174px;
     margin-right: 95px;
   }
 }
 
-.page-header__logo-image {
+.page-header__logo-image,
+.page-header__logo-text {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;

@@ -42,13 +42,61 @@
 
 .features__text {
   margin: 0;
-  padding-left: 20px;
 }
 
 .features__item {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 60px auto;
+  column-gap: 20px;
+  align-items: center;
   margin-bottom: 22px;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     display: block;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 32px;
+    left: 14px;
+    top: 14px;
+    background-repeat: no-repeat;
+  }
+
+  &--leaf {
+    &::after {
+      background-image: url("../img/icon-leaf.png");
+    }
+  }
+
+  &--tub {
+    &::after {
+      background-image: url("../img/icon-tub.png");
+    }
+  }
+
+  &--eat {
+    &::after {
+      background-image: url("../img/icon-eat.png");
+    }
+  }
+
+  &--alarm {
+    &::after {
+      background-image: url("../img/icon-alarm.png");
+    }
   }
 }
