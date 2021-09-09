@@ -1,24 +1,24 @@
 .features__wrapper {
-  padding-top: 24px;
   margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
     margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 71px;
     margin-bottom: 11px;
   }
 }
 
 .features__list {
   display: grid;
-  justify-content: space-between;
+  align-items: flex-start;
+  counter-reset: item-counter;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+    column-gap: 137px;
+    row-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,40 +40,73 @@
   }
 }
 
-.features__text {
-  margin: 0;
-}
-
 .features__item {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 60px auto;
-  column-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
+  padding: 0;
   margin-bottom: 22px;
   position: relative;
 
-  @media (min-width: $desktop-width) {
-    display: block;
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+
+    &::after {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      display: block;
+      min-width: 135px;
+      counter-increment: item-counter;
+      content: counter(item-counter);
+      font-family: $extra-font-family;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+      z-index: -1;
+    }
+  }
+}
+
+.features__text {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  column-gap: 20px;
+  margin: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    grid-auto-flow: row;
   }
 
-  &::before {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 60px;
-    background-color: $basic-green;
-  }
+  &--leaf,
+  &--tub,
+  &--eat,
+  &--alarm {
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: $basic-green;
 
-  &::after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 30px;
-    height: 32px;
-    left: 14px;
-    top: 14px;
-    background-repeat: no-repeat;
+      @media (min-width: $tablet-width) {
+        margin-bottom: 31px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 30px;
+      height: 32px;
+      left: 14px;
+      top: 14px;
+      background-repeat: no-repeat;
+    }
   }
 
   &--leaf {
