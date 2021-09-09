@@ -1,7 +1,15 @@
 .page-header {
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+  }
+
   &--index {
     @media (min-width: $desktop-width) {
-      padding-top: 53px;
+      padding-top: 54px;
       position: relative;
 
       &::before {
