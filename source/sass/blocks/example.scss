@@ -1,5 +1,5 @@
 .example {
-  background-color: $basic-grey;
+  background-color: $color-lightgrey;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to top, $basic-grey 462px, $color-white 462px);
@@ -14,7 +14,7 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      left: calc((100% - 1310px) / 2 + 935px);
+      left: calc(50% + 282px);
       height: calc(100% - 205px);
       background-color: $color-lightgrey;
     }
@@ -97,10 +97,10 @@
 }
 
 .example__item {
-  min-width: 124px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 0;
-  border: 1px solid $border-extra;
-  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
@@ -108,16 +108,18 @@
 
   &--description {
     @include text-style($basic-font-family, 12px, 12px, 400, $color-black);
-    display: block;
-    width: 80px;
-    background-color: $basic-grey;
-    transform: translate(25%, 50%);
+    background-color: $color-lightgrey;
+    display: inline-flex;
+    align-self: center;
+    padding: 0 7px;
+    margin-top: -7px;
 
     @media (min-width: $tablet-width) {
       font-size: 14px;
       line-height: 14px;
+      padding: 0 11px;
+      margin-top: -8px;
       background-color: $color-white;
-      transform: translate(45%, 50%);
     }
 
     @media (min-width: $desktop-width) {
@@ -129,6 +131,8 @@
     @include text-style($extra-font-family, 24px, 24px, $color-black);
     text-transform: uppercase;
     padding: 14px;
+    border: 1px solid $border-extra;
+    border-radius: 3px;
 
     @media (min-width: $tablet-width) {
       font-size: 30px;
@@ -171,6 +175,14 @@
 }
 
 .example__br {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.example-total__br {
   display: none;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
