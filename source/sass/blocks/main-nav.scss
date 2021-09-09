@@ -1,6 +1,21 @@
 .main-nav {
   text-align: center;
   margin-left: auto;
+
+  @media (max-width: $mobile-width-only) {
+    &--opened {
+      position: absolute;
+      background-color: $color-white;
+      width: 100%;
+      top: 65px;
+      left: 0;
+      z-index: 2;
+    }
+
+    &--closed {
+      display: none;
+    }
+  }
 }
 
 .main-nav__list {
@@ -74,12 +89,20 @@
 }
 
 .main-nav__toggler {
-  width: 25px;
-  height: 18px;
-  background-image: url("../img/hamburger.svg");
-  background-color: transparent;
+  width: 24px;
+  height: 20px;
   border: none;
   cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+  &--opened {
+    background-image: url("../img/icon-close.svg");
+  }
+
+  &--closed {
+    background-image: url("../img/icon-hamburger.svg");
+  }
 
   @media (min-width: $tablet-width) {
     display: none;

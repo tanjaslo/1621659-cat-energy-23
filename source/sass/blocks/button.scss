@@ -11,6 +11,15 @@
   @include text-style($extra-font-family, 14px, 18px, $color-white);
   background-color: $basic-green;
 
+  &:hover {
+    background-color: $secondary-green;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+    background-color: $secondary-green;
+  }
+
   &--index {
     @media (min-width: $tablet-width) {
       padding: 14px 26px;
@@ -28,5 +37,14 @@
   &--secondary {
     color: $color-darkgrey;
     background-color: $basic-grey;
+
+    &:hover {
+      background-color: $secondary-grey;
+    }
+
+    &:active {
+      color: rgba($color-darkgrey, 0.3);
+      background-color: $secondary-grey;
+    }
   }
 }

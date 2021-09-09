@@ -22,10 +22,10 @@
   }
 
   @media (max-width: $tablet-width) {
-    border-top: solid 1px $border-catalog;
+    border-top: solid 1px $secondary-grey;
 
     &:first-child {
-      border-top: solid 1px $border-catalog;
+      border-top: solid 1px $secondary-grey;
 
       @media (min-width: $tablet-width) {
         border-top: none;
@@ -119,7 +119,6 @@
 }
 
 .card__img-link {
-  //display: block;
   display: flex;
   width: 100%;
   height: 112px;
