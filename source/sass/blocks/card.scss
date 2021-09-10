@@ -125,23 +125,26 @@
   align-items: flex-end;
   justify-content: center;
 
-  &--last-card {
-    width: 30px;
-    height: 30px;
-
-    @media (min-width: $tablet-width) {
-      width: 80px;
-      height: 80px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     text-align: center;
     margin-top: -80px;
     margin-bottom: 34px;
 
     &--last-card {
+      align-items: center;
       margin-top: 0;
+    }
+  }
+}
+
+.card__img {
+  &--last-card {
+    width: 30px;
+    height: 30px;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
     }
   }
 }
