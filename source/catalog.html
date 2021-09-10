@@ -284,13 +284,15 @@
             </li>
             <li class="catalog-main__item card card--last-card">
               <a class="card__img-link card__img-link--last-card" href="#" aria-label="Перейти на страницу продукта">
-                <img
-                  class="card__img card__img--last-card"
-                  src="img/plus.svg"
-                  width="30"
-                  height="30"
-                  alt="Фото Cat energy Slim рис 500гр"
-                />
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/icon-plus2.svg">
+                  <img
+                    class="card__img card__img--last-card"
+                    src="img/icon-plus.svg"
+                    width="30" height="30"
+                    alt="Показать все товары"
+                  >
+                </picture>
               </a>
               <div class="card__info card__info--last-card">
                 <h3 class="card__title card__title--last-card">Показать еще 100500 товаров</h3>
