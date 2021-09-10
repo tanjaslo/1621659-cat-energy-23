@@ -31,10 +31,10 @@
 
 .main-nav__item {
   padding: 23px 0;
-  border-top: 1px solid $border-header;
+  border-top: 1px solid $border-lightgrey;
 
   &:last-child {
-    border-bottom: 1px solid $border-header;
+    border-bottom: 1px solid $border-lightgrey;
   }
 
   @media (min-width: $tablet-width) {

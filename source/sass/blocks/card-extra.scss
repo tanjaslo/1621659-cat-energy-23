@@ -4,21 +4,21 @@
   justify-content: space-between;
   padding-top: 13px;
   padding-bottom: 24px;
-  border-bottom: 1px solid $border-extra;
+  border-bottom: 1px solid $border-midgrey;
 
   &:first-child {
-    border-top: 1px solid $border-extra;
+    border-top: 1px solid $border-midgrey;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 26px 38px;
-    border: 1px solid $border-extra;
+    border: 1px solid $border-midgrey;
     border-bottom: none;
 
     &:last-child {
-      border-bottom: 1px solid $border-extra;
+      border-bottom: 1px solid $border-midgrey;
     }
   }
 
