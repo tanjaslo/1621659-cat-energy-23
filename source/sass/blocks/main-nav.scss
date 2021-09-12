@@ -15,6 +15,10 @@
     &--closed {
       display: none;
     }
+
+    &--nojs {
+      position: static;
+    }
   }
 }
 

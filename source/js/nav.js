@@ -2,6 +2,7 @@ const navMain = document.querySelector('.main-nav');
 const toggler = document.querySelector('.main-nav__toggler');
 
 navMain.classList.remove('main-nav--nojs');
+navMain.classList.toggle('main-nav--closed');
 
 toggler.addEventListener('click', function() {
   if (toggler.classList.contains('main-nav__toggler--closed')) {
