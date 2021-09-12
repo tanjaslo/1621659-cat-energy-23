@@ -22,8 +22,16 @@
         display: block;
         width: 50%;
         height: 694px;
-        background: linear-gradient(to top, $background-green, $background-green), url("../img/index-background-desktop.png") no-repeat center center / cover;
+        background: linear-gradient(to top, $background-green, $background-green),
+          url("../img/index-bg-desktop.jpg") no-repeat center center / cover;
         background-color: $background-green;
+
+        @media (min-resolution: 2dppx) {
+          width: 50%;
+          height: 694px;
+          background-image: linear-gradient(to top, $background-green, $background-green),
+            url("../img/index-bg-desktop@2x.jpg");
+        }
       }
     }
   }
@@ -67,8 +75,8 @@
 
 .page-header__logo-image {
   @media (min-width: $tablet-width) {
-  width: 174px;
-  height: 52px;
+    width: 174px;
+    height: 52px;
   }
 }
 
