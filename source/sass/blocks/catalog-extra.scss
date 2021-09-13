@@ -65,8 +65,11 @@
 
     @media (min-width: $desktop-width) {
       top: 20px;
-      left: -30px;
-      width: 100vw;
+      left: 50%;
+      right: 50%;
+      width: 102vw;
+      margin-left: -50vw;
+      margin-right: -50vw;
     }
   }
 }

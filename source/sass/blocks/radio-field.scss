@@ -71,8 +71,8 @@
     height: 18px;
     left: -19px;
   }
+}
 
-  .radio-field__control:disabled + .radio-field__name {
-    opacity: 30%;
-  }
+.radio-field__control:disabled + .radio-field__name {
+  opacity: 30%;
 }

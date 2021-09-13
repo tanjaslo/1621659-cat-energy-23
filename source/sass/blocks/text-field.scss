@@ -2,6 +2,7 @@
   display: flex;
   width: 100%;
   align-items: center;
+  position: relative;
 }
 
 .text-field__label,
@@ -43,4 +44,32 @@
     padding: 9px 15px;
     resize: none;
   }
+
+  &:hover {
+    border-color: $color-darkgrey;
+  }
+
+  &:focus {
+    outline-width: 2px;
+    outline-color: $color-darkgrey;
+  }
+
+  &:focus:invalid {
+    outline-color: $color-red;
+  }
+
+  &:focus + .text-field__icon {
+    color: $basic-green;
+  }
+
+  &:focus:invalid + .text-field__icon {
+    color: $color-red;
+  }
+}
+
+.text-field__icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
