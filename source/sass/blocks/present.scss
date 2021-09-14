@@ -9,7 +9,7 @@
   background: linear-gradient($background-green, $background-green),
     url("../img/present-mobile.jpg") no-repeat center center / cover;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: $retina-dppx) {
     background: linear-gradient($background-green, $background-green),
       url("../img/present-mobile@2x.jpg") no-repeat center center / cover;
   }
@@ -36,7 +36,7 @@
     background: linear-gradient($background-green, $background-green),
       url("../img/present-tablet.jpg") no-repeat center center / cover;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $retina-dppx) {
       background: linear-gradient($background-green, $background-green),
         url("../img/present-tablet@2x.jpg") no-repeat center center / cover;
     }
@@ -56,7 +56,7 @@
       url("../img/present-desktop.jpg") no-repeat center center / cover;
     background-size: 245px 100%;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $retina-dppx) {
       background: linear-gradient($background-green, $background-green),
         url("../img/present-desktop@2x.jpg") no-repeat center center / cover;
     }

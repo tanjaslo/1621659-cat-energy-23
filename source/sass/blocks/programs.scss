@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 73px;
   }
 }
 
@@ -26,7 +26,7 @@
 
 .programs__item {
   background-color: $basic-grey;
-  padding: 30px 18px 20px;
+  padding: 30px 20px 20px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 77px 53px 55px;
@@ -76,7 +76,7 @@
       width: 200px;
       height: 211px;
       top: 0;
-      left: 60%;
+      left: 65%;
       background-image: url("../img/icon-cat-slim2.svg");
     }
 
@@ -84,19 +84,19 @@
       width: 268px;
       height: 200px;
       top: 15px;
-      left: 55%;
+      left: 60%;
       background-image: url("../img/icon-cat-pro2.svg");
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 73px;
-    margin-left: 150px;
+    margin-bottom: 82px;
+    margin-left: 170px;
 
     &--slim::before {
       width: 100px;
       height: 108px;
-      left: -150px;
+      left: -170px;
       top: -25px;
       background-image: url("../img/icon-cat-slim3.svg");
     }
@@ -104,7 +104,7 @@
     &--pro::before {
       width: 134px;
       height: 100px;
-      left: -170px;
+      left: -190px;
       top: -25px;
       background-image: url("../img/icon-cat-pro3.svg");
     }
@@ -112,7 +112,7 @@
 }
 
 .programs__text {
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   margin-bottom: 20px;
   border-bottom: 1px solid $basic-border;
 
@@ -120,7 +120,7 @@
     padding-bottom: 0;
     margin-bottom: 48px;
     border-bottom: none;
-    width: 50%;
+    width: 55%;
   }
 
   @media (min-width: $desktop-width) {
@@ -133,6 +133,7 @@
   @include text-style($extra-font-family, 16px, 16px, $color-black);
   text-transform: uppercase;
   display: block;
+  align-self: flex-end;
   position: relative;
 
   &::after {

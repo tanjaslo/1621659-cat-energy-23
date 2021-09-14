@@ -1,15 +1,14 @@
 .page-header {
   @media (min-width: $tablet-width) {
-    padding-top: 42px;
+    padding-top: 32px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-top: 54px;
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
   }
 
   &--index {
     @media (min-width: $desktop-width) {
-      padding-top: 54px;
       position: relative;
 
       &::before {
@@ -26,7 +25,7 @@
           url("../img/index-bg-desktop.jpg") no-repeat center center / cover;
         background-color: $background-green;
 
-        @media (min-resolution: 2dppx) {
+        @media (min-resolution: $retina-dppx) {
           width: 50%;
           height: 694px;
           background-image: linear-gradient(to top, $background-green, $background-green),
@@ -40,8 +39,8 @@
 .page-header__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 24px 30px;
   }
 }
 
@@ -54,11 +53,6 @@
   @media (max-width: $mobile-width-only) {
     padding-top: 10px;
     padding-bottom: 17px;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 174px;
-    margin-right: 95px;
   }
 }
 
@@ -77,6 +71,11 @@
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 

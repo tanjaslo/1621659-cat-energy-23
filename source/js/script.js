@@ -1,5 +1,8 @@
 const navMain = document.querySelector('.main-nav');
 const toggler = document.querySelector('.main-nav__toggler');
+const mapStatic = document.querySelector('.contacts__map');
+
+mapStatic.classList.remove('contacts__map--nojs');
 
 navMain.classList.remove('main-nav--nojs');
 navMain.classList.toggle('main-nav--closed');

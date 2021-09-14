@@ -19,13 +19,14 @@
 
   @media (min-width: $tablet-width) {
     width: 690px;
-    min-height: 520px;
-    margin-bottom: 40px;
+    min-height: 490px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 536px;
-    margin-bottom: 19px;
+    min-height: 520px;
+    //margin-bottom: 19px;
+    margin-bottom: 0;
   }
 }
 
@@ -36,6 +37,10 @@
     left: 0;
     right: 0;
     bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -50px;
   }
 }
 
@@ -51,7 +56,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     width: 690px;
-    height: 536px;
+    height: 490px;
 
     &--before {
       clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
@@ -60,6 +65,11 @@
     &--after {
       clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    height: 520px;
   }
 }
 
