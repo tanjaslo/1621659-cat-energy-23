@@ -25,12 +25,13 @@
 
   @media (min-width: $desktop-width) {
     min-height: 520px;
-    //margin-bottom: 19px;
     margin-bottom: 0;
   }
 }
 
 .slider__block {
+  margin-bottom: 10px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 0;
@@ -46,19 +47,19 @@
 
 .slider__img {
   display: none;
-  width: 320px;
-  height: 240px;
 
   &--before {
     display: block;
+    width: 312px;
+    height: 232px;
   }
 
   @media (min-width: $tablet-width) {
     display: block;
-    width: 690px;
-    height: 490px;
 
     &--before {
+      width: 690px;
+      height: 490px;
       clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
     }
 
@@ -84,7 +85,7 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-  padding: 0 10px;
+  padding: 0 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
