@@ -1,16 +1,16 @@
 .card {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 
   &--last-card {
-    padding-top: 25px;
     text-align: center;
   }
 
   @media (max-width: $mobile-width-only) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 13px;
+    //row-gap: 13px;
     align-items: center;
     border-bottom: solid 1px $secondary-grey;
     padding-bottom: 25px;
@@ -31,6 +31,7 @@
       flex-wrap: wrap;
       justify-content: center;
       text-align: center;
+      padding-top: 0;
     }
   }
 
@@ -60,6 +61,7 @@
 
   &--last-card {
     max-width: 100%;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $tablet-width) {
@@ -94,10 +96,11 @@
 .card__order-link,
 .card__assortment-link {
   width: 100%;
+  height: 40px;
 }
 
 .card__assortment-link {
-  height: 42px;
+  height: 40px;
   align-self: flex-end;
 }
 
@@ -118,28 +121,36 @@
 
 .card__order-link {
   @media (max-width: $tablet-width) {
+    //border: 2px solid #ff0000;
     grid-column: 1 / -1;
+    //align-self: flex-start;
+    margin-top: 19px;
   }
 }
 
 .card__img-link {
   display: flex;
   width: 100%;
-  min-height: 196px;
+  //min-height: 30px;
   justify-content: center;
-  align-items: flex-end;
+  //align-items: center;
+  //align-content: flex-end;
+  //margin-bottom: 20px;
 
-  @media (max-width: $mobile-width-only) {
+  &--last-card {
     min-height: 30px;
-    align-items: center;
-    margin-bottom: 23px;
+    //margin-top: 0;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 196px;
     margin-top: -73px;
     margin-bottom: 34px;
+    align-items: flex-end;
 
     &--last-card {
+      border: 1px solid #ff0000;
       min-height: 60px;
       margin-top: 0;
     }
@@ -158,13 +169,14 @@
 
 .card__img {
   display: block;
+  //align-self: flex-end;
   width: auto;
   height: auto;
 
   &--last-card {
     width: 30px;
     height: 30px;
-    align-self: center;
+    //align-self: center;
 
     @media (min-width: $tablet-width) {
       width: 60px;
@@ -174,6 +186,10 @@
 }
 
 .card__info {
+  align-items: flex-start;
+  //flex-wrap: wrap;
+  //align-content: flex-start;
+
   &--last-card {
     width: 100%;
   }
@@ -184,3 +200,4 @@
     justify-content: center;
   }
 }
+

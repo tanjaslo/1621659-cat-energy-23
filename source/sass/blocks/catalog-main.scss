@@ -1,5 +1,5 @@
 .catalog-main {
-  padding-top: 49px;
+  //padding-top: 49px;
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -13,7 +13,7 @@
 
 .catalog-main__list {
   display: grid;
-  gap: 25px;
+  gap: 18px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));

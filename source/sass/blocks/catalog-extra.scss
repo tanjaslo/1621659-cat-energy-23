@@ -1,6 +1,6 @@
-.catalog-extra {
-  padding: 25px 0 35px;
-}
+//.catalog-extra {
+  //padding: 25px 0 35px;
+//}
 
 .catalog-extra__wrapper {
   @media (min-width: $desktop-width) {
@@ -19,7 +19,7 @@
 .catalog-extra__title {
   @include text-style($extra-font-family, 24px, 24px, $color-black);
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 37px;
   position: relative;
 
   @media (min-width: $tablet-width) {

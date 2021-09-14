@@ -2,8 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0;
   padding-top: 13px;
-  padding-bottom: 24px;
+  padding-bottom: 19px;
   border-bottom: 1px solid $border-midgrey;
 
   &:first-child {
@@ -36,7 +37,7 @@
   margin: 0;
   display: inline-block;
   align-self: center;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -51,7 +52,7 @@
 .card-extra__order-link {
   width: 100%;
   font-size: 16px;
-  margin-top: 15px;
+  margin-top: 11px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-column: 1 / -1;
