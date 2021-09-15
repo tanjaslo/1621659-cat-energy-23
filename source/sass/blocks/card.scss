@@ -13,6 +13,10 @@
     align-items: center;
     border-bottom: solid 1px $secondary-grey;
     padding-bottom: 25px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 
     &:first-child {
       border-top: solid 1px $secondary-grey;
@@ -20,7 +24,7 @@
     }
 
     &:last-child {
-      padding-bottom: none;
+      margin-bottom: 20px;
     }
 
     &--last-card {
@@ -36,7 +40,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 36px 39px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     background-color: $basic-grey;
     text-align: center;
 
@@ -60,7 +64,7 @@
 
   &--last-card {
     max-width: 100%;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -109,7 +113,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 24px;
 
     &--last-card {
       font-size: 20px;

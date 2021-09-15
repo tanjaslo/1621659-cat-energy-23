@@ -1,6 +1,8 @@
 .options {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: o;
 }
 
 .options__term {
@@ -10,9 +12,13 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 10px;
+    padding-bottom: 7px;
     border-bottom: 1px solid $border-midgrey;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

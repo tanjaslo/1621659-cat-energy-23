@@ -21,6 +21,10 @@
           url("../img/background-promo@2x.jpg");
         background-size: auto 302px;
       }
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
     }
   }
 }
@@ -32,13 +36,13 @@
   @media (min-width: $tablet-width) {
     position: relative;
     min-height: 652px;
-    padding: 62px 0 0 117px;
+    padding: 47px 0 0 117px;
     text-align: left;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 111px;
+    padding-top: 90px;
   }
 }
 
@@ -98,7 +102,7 @@
   @media (min-width: $tablet-width) {
     width: 244px;
     position: absolute;
-    top: 288px;
+    top: 275px;
     z-index: 1;
   }
 
