@@ -1,12 +1,13 @@
-.catalog-extra {
-  padding: 25px 0 35px;
-}
-
 .catalog-extra__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 86px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: auto 245px;
     column-gap: 80px;
+    padding-bottom: 86px;
   }
 }
 
@@ -19,54 +20,26 @@
 .catalog-extra__title {
   @include text-style($extra-font-family, 24px, 24px, $color-black);
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 37px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
+    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
-    margin-left: -40px;
+    padding-left: 0;
   }
 
-  span {
-    padding-right: 22px;
-    background-color: #ffffff;
-
-    @media (min-width: $tablet-width) {
-      padding-left: 37px;
-      padding-right: 36px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 40px;
-    }
+  &--title-line {
+    @include title-line;
   }
+}
 
-  &::after {
-    position: absolute;
-    content: "";
-    z-index: -1;
-    top: 15px;
-    left: 0;
-    width: calc(100% + 20px);
-    height: 2px;
-    background-color: $basic-green;
-
-    @media (min-width: $tablet-width) {
-      top: 20px;
-      left: -30px;
-      width: calc(100% + 60px);
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 20px;
-      left: -30px;
-      width: 100vw;
-    }
-  }
+.green-line {
+  @include green-line-span;
 }

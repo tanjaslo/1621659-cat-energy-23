@@ -1,8 +1,8 @@
 .social {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  padding: 28px 20px 20px 26px;
   border-top: 1px solid $basic-border;
   border-bottom: 1px solid $basic-border;
 
@@ -16,28 +16,44 @@
 }
 
 .social__item {
+  display: block;
+  margin: 17px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__icon {
-  fill: $color-grey;
+  color: $color-grey;
 
   &:hover {
-    fill: $basic-green;
+    color: $basic-green;
   }
 
   &:active {
     opacity: 0.3;
   }
 
-  &--vk {
+  &--vkontakte {
     width: 23px;
     height: 16px;
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 32px;
+    }
   }
 
   &--instagram {
     width: 16px;
     height: 16px;
+
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
   }
 
   &--facebook {
@@ -49,6 +65,11 @@
     &:hover {
       stroke: $basic-green;
       fill: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 28px;
+      height: 33px;
     }
   }
 }

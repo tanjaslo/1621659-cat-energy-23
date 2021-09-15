@@ -1,20 +1,78 @@
 .slider {
-  position: relative;
-  z-index: 1;
+  width: 100%;
   display: grid;
-  text-align: center;
-}
-
-.slider-controls__button {
-  @include text-style($extra-font-family, 16px, 20px, $color-black);
-  text-transform: uppercase;
-  background-color: transparent;
-  border: none;
-  padding: 0 10px;
+  justify-content: center;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.slider__images {
+  position: relative;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 490px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 520px;
+    margin-bottom: 0;
+  }
+}
+
+.slider__block {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -50px;
+  }
+}
+
+.slider__img {
+  display: none;
+
+  &--before {
+    display: block;
+    width: 312px;
+    height: 232px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    &--before {
+      width: 708px;
+      height: 490px;
+      clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    }
+
+    &--after {
+      width: 708px;
+      height: 520px;
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 708px;
+    height: 520px;
   }
 }
 
@@ -22,6 +80,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.slider-controls__button {
+  @include text-style($extra-font-family, 16px, 20px, $color-black);
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  padding: 0 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .slider-controls__range {
@@ -76,24 +147,5 @@
       border-color: $basic-green;
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     }
-  }
-}
-
-.slider__images {
-  justify-self: center;
-}
-
-.slider__img {
-  display: block;
-  margin-bottom: 23px;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    height: 620px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 650px;
-    height: 536px;
   }
 }
