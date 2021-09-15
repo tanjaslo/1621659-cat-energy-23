@@ -103,3 +103,24 @@
     }
   }
 }
+
+.page-header__toggler {
+  width: 24px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+  &--opened {
+    background-image: url("../img/icon-close.svg");
+  }
+
+  &--closed {
+    background-image: url("../img/icon-hamburger.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
