@@ -12,7 +12,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header page-header--index">
       <div class="page-header__wrapper wrapper">
         <div class="page-header__logo">
@@ -162,22 +162,22 @@
             </p>
             <dl class="example__list">
               <div class="example__item">
-                <dt class="example__item--number">5 кг</dt>
-                <dd class="example__item--description">снижение&nbsp;<br class="example__br">веса</dd>
+                <dt class="example__item-number">5 кг</dt>
+                <dd class="example__item-description">снижение&nbsp;<br class="example__br">веса</dd>
               </div>
               <div class="example__item">
-                <dt class="example__item--number">60 дней</dt>
-                <dd class="example__item--description">затрачено&nbsp;<br class="example__br">времени</dd>
+                <dt class="example__item-number">60 дней</dt>
+                <dd class="example__item-description">затрачено&nbsp;<br class="example__br">времени</dd>
               </div>
             </dl>
             <p class="example__total">
-              Затраты на питание: <br class="example-total__br">
+              Затраты на питание: <br class="example__total-br">
               <span class="example__total-cost">15 000 руб.</span>
             </p>
           </div>
           <div class="example__slider slider">
             <div class="slider__images">
-              <div class="slider__block slider__img--before">
+              <div class="slider__block slider__block--before">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
@@ -190,7 +190,7 @@
                   >
                 </picture>
               </div>
-              <div class="slider__block slider__img--after">
+              <div class="slider__block slider__block--after">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
@@ -203,12 +203,12 @@
                 </picture>
               </div>
             </div>
-            <div class="slider-controls">
-              <button class="slider-controls__button slider-controls__button--before">Было</button>
-                <div class="slider-controls__range">
-                  <div class="slider-controls__toggler" tabindex="0" aria-label="Показать Бориса до и после похудения"></div>
+            <div class="slider__controls">
+              <button class="slider__button slider__button--before">Было</button>
+                <div class="slider__range">
+                  <div class="slider__toggler" tabindex="0"></div>
                 </div>
-              <button class="slider-controls__button slider-controls__button--after">Стало</button>
+              <button class="slider__button slider__button--after">Стало</button>
             </div>
           </div>
         </div>
@@ -229,7 +229,7 @@
         <div class="contacts__map contacts__map--nojs">
           <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1628014568403!5m2!1sru!2sru"
-          style="border:0;" allowfullscreen="" width="100%" height="400" loading="lazy" class="contacts__map-iframe"></iframe>
+          style="border: 0;" allowfullscreen="" height="400" loading="lazy" class="contacts__map-iframe"></iframe>
         </div>
       </div>
       <div class="page-footer__wrapper wrapper">
@@ -289,6 +289,7 @@
           <a
             class="developer__link"
             href="https://htmlacademy.ru/intensive/adaptive"
+            aria-label="Сайт HTML Academy"
             target="_blank"
             rel="noopener"
           >

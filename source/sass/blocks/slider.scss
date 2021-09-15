@@ -76,13 +76,13 @@
   }
 }
 
-.slider-controls {
+.slider__controls {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.slider-controls__button {
+.slider__button {
   @include text-style($extra-font-family, 16px, 20px, $color-black);
   text-transform: uppercase;
   background-color: transparent;
@@ -95,7 +95,7 @@
   }
 }
 
-.slider-controls__range {
+.slider__range {
   display: flex;
   align-items: center;
   width: 84px;
@@ -113,7 +113,7 @@
   }
 }
 
-.slider-controls__toggler {
+.slider__toggler {
   width: 35px;
   height: 6px;
   background-color: $basic-green;

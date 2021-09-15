@@ -80,6 +80,7 @@
 }
 
 .example__list {
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10%;
@@ -104,7 +105,7 @@
     min-width: 162px;
   }
 
-  &--description {
+  .example__item-description {
     @include text-style($basic-font-family, 12px, 12px, 400, $color-black);
     background-color: $color-lightgrey;
     display: inline-flex;
@@ -125,7 +126,7 @@
     }
   }
 
-  &--number {
+  .example__item-number {
     @include text-style($extra-font-family, 24px, 24px, $color-black);
     text-transform: uppercase;
     padding: 14px;
@@ -159,6 +160,14 @@
   }
 }
 
+.example__total-br {
+  display: none;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .example__indicators {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -177,13 +186,5 @@
 
   @media (min-width: $tablet-width) {
     display: none;
-  }
-}
-
-.example-total__br {
-  display: none;
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    display: block;
   }
 }
