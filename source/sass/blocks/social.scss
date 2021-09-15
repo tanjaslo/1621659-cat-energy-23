@@ -19,6 +19,10 @@
   display: block;
   margin: 17px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__icon {
@@ -32,14 +36,24 @@
     opacity: 0.3;
   }
 
-  &--vk {
+  &--vkontakte {
     width: 23px;
     height: 16px;
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 32px;
+    }
   }
 
   &--instagram {
     width: 16px;
     height: 16px;
+
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
   }
 
   &--facebook {
@@ -51,6 +65,11 @@
     &:hover {
       stroke: $basic-green;
       fill: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 28px;
+      height: 33px;
     }
   }
 }

@@ -1,12 +1,13 @@
-//.catalog-extra {
-  //padding: 25px 0 35px;
-//}
-
 .catalog-extra__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 86px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: auto 245px;
     column-gap: 80px;
+    padding-bottom: 86px;
   }
 }
 

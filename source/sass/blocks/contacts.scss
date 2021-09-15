@@ -76,13 +76,16 @@
   width: 100%;
   height: 362px;
 
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
   @media (min-width: $desktop-width) {
     background-size: 100% auto;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
     z-index: 1;
   }
 

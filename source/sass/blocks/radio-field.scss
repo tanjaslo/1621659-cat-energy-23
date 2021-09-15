@@ -1,5 +1,5 @@
 .radio-field {
-  padding: 11px;
+  padding: 10px 0 12px 16px;
 }
 
 .radio-field__label {
@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding-left: -25px;
+  padding-left: 5px;
 
   &::before {
     content: "";

@@ -18,9 +18,9 @@
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    width: 690px;
+    width: 708px;
     min-height: 490px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,18 +58,20 @@
     display: block;
 
     &--before {
-      width: 690px;
+      width: 708px;
       height: 490px;
       clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
     }
 
     &--after {
+      width: 708px;
+      height: 520px;
       clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
     }
   }
 
   @media (min-width: $desktop-width) {
-    width: 690px;
+    width: 708px;
     height: 520px;
   }
 }
