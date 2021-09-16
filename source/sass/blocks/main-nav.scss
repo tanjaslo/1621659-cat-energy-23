@@ -26,6 +26,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,10 +47,14 @@
     margin-right: 35px;
     border: none;
 
-    &:last-child {
+    &:last-of-type {
       border-bottom: none;
       margin-right: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 31px;
   }
 }
 
@@ -70,7 +75,7 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 
     &--active,
     &--current {
@@ -80,7 +85,6 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    line-height: 30px;
     padding-bottom: 8px;
 
     &--index {
