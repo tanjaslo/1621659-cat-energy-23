@@ -1,14 +1,13 @@
 .logo {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   align-items: center;
-  //justify-content: space-between;
-  flex-shrink: 0;
+  column-gap: 50px;
 
   @media (min-width: $tablet-width) {
+    display: block;
     width: 174px;
     height: 52px;
-    padding-top: 13px;
-    padding-bottom: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,17 +44,14 @@
 .logo__text {
   width: 101px;
   height: 18px;
-  justify-self: center;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.logo__link {
-  &--text {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+.logo__link-text {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

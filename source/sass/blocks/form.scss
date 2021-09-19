@@ -4,7 +4,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    row-gap: 76px;
   }
 }
 
@@ -13,44 +12,71 @@
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      column-gap: 45px;
+      column-gap: 56px;
     }
 
     @media (min-width: $desktop-width) {
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 104px;
+      column-gap: 79px;
     }
   }
 }
 
 .form__group {
   display: grid;
-  row-gap: 10px;
+  row-gap: 12px;
   margin: 0;
   padding: 0;
-  margin-bottom: 22px;
+  margin-bottom: 27px;
   border: none;
 
+  @media (min-width: $tablet-width) {
+    row-gap: 20px;
+    margin-bottom: 71px;
+
+    &:last-of-type {
+      margin-bottom: 32px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
-    &:nth-of-type(3) {
-      grid-template-columns: 1fr 1fr;
-      column-gap: 80px;
+    margin-bottom: 0;
+    margin-bottom: 69px;
+
+    &:last-of-type {
+      margin-bottom: 6px;
     }
 
-    &--info {
-      grid-column: 1 / -1;
+    &:nth-of-type(3) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 77px;
+    }
+  }
+
+  &--info {
+    grid-column: 1 / -1;
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 69px;
     }
   }
 
   &--bordered {
     border-top: 1px solid $basic-border;
     border-bottom: 1px solid $basic-border;
-    padding: 20px 0 18px 50px;
+    padding: 17px 20px 11px 47px;
     margin-right: -20px;
     margin-left: -20px;
 
     @media (min-width: $tablet-width) {
       border: 1px solid $basic-border;
+      //padding: 17px 20px 11px 47px; // посмотреть
+      padding: 20px 0 18px 50px;
       margin-right: 0;
       margin-left: 0;
     }
@@ -62,23 +88,10 @@
       align-items: center;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    row-gap: 15px;
-    margin-bottom: 76px;
-
-    &:last-of-type {
-      margin-bottom: 20px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-  }
 }
 
 .form__legend {
-  @include text-style($extra-font-family, 24px, 30px, $color-black);
+  @include text-style($extra-font-family, 24px, 26px, $color-black);
   margin: 0;
   margin-bottom: 34px;
   position: relative;
@@ -86,24 +99,41 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 70px;
+    margin-bottom: 76px;
     width: 100%;
-
-    &:last-of-type {
-      margin-bottom: 57px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 76px;
-
-    &:last-of-type {
-      margin-bottom: 57px;
-    }
   }
 
   &--title-line {
     @include title-line;
+  }
+
+  &--extra {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 52px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.form__legend-line {
+  @include green-line-span;
+  display: inline-block;
+  margin-left: -2px;
+  max-width: 210px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    max-width: none;
+    margin-left: -40px;
   }
 }
 
@@ -121,7 +151,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 47%;
+    width: 46.6%;
+    margin-bottom: 15px;
   }
 }
 
@@ -141,7 +172,7 @@
 .form__submit {
   text-align: center;
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
@@ -150,10 +181,6 @@
     justify-items: flex-start;
     margin-bottom: 71px;
   }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -60px;
-  }
 }
 
 .form__br {
@@ -161,14 +188,5 @@
 
   @media (min-width: $tablet-width) {
     display: none;
-  }
-}
-
-.form__legend-line {
-  @include green-line-span;
-  margin-left: -2px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: -40px;
   }
 }

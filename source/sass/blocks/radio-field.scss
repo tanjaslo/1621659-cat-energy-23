@@ -1,5 +1,5 @@
 .radio-field {
-  padding: 10px 0 12px 16px;
+  padding: 9px 9px 13px 19px;
 }
 
 .radio-field__label {
@@ -21,7 +21,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding-left: 5px;
 
   &::before {
     content: "";
@@ -29,7 +28,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    left: -40px;
+    left: -48px;
     top: 50%;
     border: 1px solid $border-midgrey;
     border-radius: 50%;
@@ -41,12 +40,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
+    padding-left: 18px;
 
     &::before {
       width: 40px;
       height: 40px;
-      left: -30px;
+      left: -39px;
     }
   }
 }
@@ -62,17 +61,22 @@
   position: absolute;
   width: 14px;
   height: 14px;
-  left: -32px;
+  left: -40px;
   border-radius: 50%;
   background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
-    left: -19px;
+    left: -27px;
   }
 }
 
 .radio-field__control:disabled + .radio-field__name {
   opacity: 30%;
+}
+
+.radio-field__control:focus + .radio-field__name::before {
+  border-color: $color-darkgrey;
+  border-width: 2px;
 }

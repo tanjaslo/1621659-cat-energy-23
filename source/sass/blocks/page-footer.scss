@@ -6,19 +6,20 @@
 .page-footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 59px;
     padding-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 59px;
+    padding-top: 57px;
   }
 }
 
 .page-footer__logo {
-  padding: 39px 0 32px;
+  padding: 39px 0 28px;
 
   @media (min-width: $tablet-width) {
     padding: 0;

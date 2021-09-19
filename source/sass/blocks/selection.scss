@@ -1,10 +1,14 @@
 .selection__wrapper {
+  padding-top: 25px;
+
   @media (min-width: $tablet-width) {
+    padding-top: 67px;
     padding-left: 69px;
     padding-right: 69px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 74px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -13,18 +17,12 @@
 .selection__header {
   @include text-style($extra-font-family, 36px, 36px, $color-black);
   margin: 0;
-  padding-top: 20px;
   margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 40px;
     margin-bottom: 54px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 58px;
   }
 }
 
@@ -37,10 +35,11 @@
     font-size: 20px;
     line-height: 30px;
     width: 55%;
-    margin-bottom: 66px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin-bottom: 67px;
   }
 }
