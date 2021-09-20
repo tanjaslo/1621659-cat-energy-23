@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: o;
+  margin: 0;
 }
 
 .options__term {
@@ -13,9 +13,9 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 7px;
+    padding-bottom: 6px;
     border-bottom: 1px solid $border-midgrey;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 
     &:last-child {
       margin-bottom: 0;

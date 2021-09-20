@@ -12,9 +12,7 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 25px 36px;
+    padding: 18px 36px 29px 38px;
     border: 1px solid $border-midgrey;
     border-bottom: none;
 
@@ -26,8 +24,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 245px;
     column-gap: 38px;
-    padding-top: 15px;
-    padding-bottom: 17px;
+    padding: 10px 0;
   }
 }
 
@@ -37,7 +34,6 @@
   margin: 0;
   display: inline-block;
   align-self: center;
-  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -47,8 +43,8 @@
 
 .card-extra__order-link {
   width: 100%;
+  height: 40px;
   font-size: 16px;
-  margin-top: 11px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-column: 1 / -1;
