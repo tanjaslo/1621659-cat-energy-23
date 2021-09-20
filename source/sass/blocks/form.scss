@@ -40,7 +40,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
     margin-bottom: 69px;
 
     &:last-of-type {
@@ -116,6 +115,7 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 52px;
     }
+
     @media (min-width: $desktop-width) {
       margin-bottom: 48px;
     }
