@@ -1,9 +1,5 @@
 .developer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 20px 0;
-  border-bottom: none;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -13,6 +9,7 @@
 .developer__link {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 

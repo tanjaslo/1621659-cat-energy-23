@@ -12,20 +12,20 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header page-header--index">
       <div class="page-header__wrapper wrapper">
-        <div class="page-header__logo">
+        <div class="page-header__logo logo">
           <a
-          class="page-header__logo-link"
+          class="logo__link"
           aria-label="Перейти на главную страницу Cat Energy"
           href="index.html"
           >
-            <picture class="page-header__logo-image">
-              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+            <picture>
               <source srcset="img/logo-desktop.svg" media="(min-width: 1280px)">
+              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
               <img
-              class="page-header__logo-image"
+              class="logo__image"
               src="img/logo-mobile.svg"
               width="34"
               height="38"
@@ -34,19 +34,22 @@
             </picture>
           </a>
           <a
-            class="page-header__logo-link"
+            class="logo__link-text"
             aria-label="Перейти на главную страницу Cat Energy"
             href="index.html"
           >
             <img
-              class="page-header__logo-text"
+              class="logo__image-text"
               src="img/logo-mobile-text.svg"
               width="101"
               height="18"
               alt="Текстовый логотип сайта Cat energy"
             />
           </a>
-          <button class="main-nav__toggler main-nav__toggler--closed" type="button" aria-label="Открыть меню">
+          <button
+            class="page-header__toggler page-header__toggler--closed"
+            type="button" aria-label="Открыть меню"
+          >
           </button>
         </div>
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -67,9 +70,9 @@
     <main class="page-main">
       <section class="promo">
         <div class="promo__wrapper wrapper">
-          <h1 class="promo__header">Функциональное<br /> питание для котов</h1>
+          <h1 class="promo__header">Функциональное питание для котов</h1>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <picture class="promo__img">
+          <picture>
             <source type="image/webp" media="(min-width: 1280px)"
               srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
@@ -123,25 +126,25 @@
         <div class="features__wrapper wrapper">
           <h2 class="features__title">Как это работает</h2>
           <ol class="features__list list-reset">
-            <li class="features__item features__item--leaf">
+            <li class="features__item">
               <p class="features__text features__text--leaf">
                 Функциональное питание содержит только полезные питательные
                 вещества.
               </p>
             </li>
-            <li class="features__item features__item--tub">
+            <li class="features__item">
               <p class="features__text features__text--tub">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и
                 готово.
               </p>
             </li>
-            <li class="features__item features__item--eat">
+            <li class="features__item">
               <p class="features__text features__text--eat">
                 Замените один-два приема обычной еды на наше функциональное
                 питание.
               </p>
             </li>
-            <li class="features__item features__item--alarm">
+            <li class="features__item">
               <p class="features__text features__text--alarm">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего
                 питомца!
@@ -162,22 +165,22 @@
             </p>
             <dl class="example__list">
               <div class="example__item">
-                <dt class="example__item--number">5 кг</dt>
-                <dd class="example__item--description">снижение&nbsp;<br class="example__br">веса</dd>
+                <dt class="example__item-number">5 кг</dt>
+                <dd class="example__item-description">снижение&nbsp;<br class="example__br">веса</dd>
               </div>
               <div class="example__item">
-                <dt class="example__item--number">60 дней</dt>
-                <dd class="example__item--description">затрачено&nbsp;<br class="example__br">времени</dd>
+                <dt class="example__item-number">60 дней</dt>
+                <dd class="example__item-description">затрачено&nbsp;<br class="example__br">времени</dd>
               </div>
             </dl>
             <p class="example__total">
-              Затраты на питание: <br class="example-total__br">
-              <span class="example__total-cost">15 000 руб.</span>
+              Затраты на питание: <br class="example__total-br">
+              <span class="example__total-cost">&nbsp;15 000 руб.</span>
             </p>
           </div>
           <div class="example__slider slider">
-            <div class="slider__images">
-              <div class="slider__block slider__img--before">
+            <div class="slider__block">
+              <div class="slider__image slider__image--before">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
@@ -190,7 +193,7 @@
                   >
                 </picture>
               </div>
-              <div class="slider__block slider__img--after">
+              <div class="slider__image slider__image--after">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
@@ -203,12 +206,16 @@
                 </picture>
               </div>
             </div>
-            <div class="slider-controls">
-              <button class="slider-controls__button slider-controls__button--before">Было</button>
-                <div class="slider-controls__range">
-                  <div class="slider-controls__toggler" tabindex="0" aria-label="Показать Бориса до и после похудения"></div>
+            <div class="slider__controls">
+              <button class="slider__button slider__button--before">
+                <span class="slider__button-text">Было</span>
+              </button>
+                <div class="slider__range">
+                  <div class="slider__toggler" tabindex="0"></div>
                 </div>
-              <button class="slider-controls__button slider-controls__button--after">Стало</button>
+              <button class="slider__button slider__button--after">
+                <span class="slider__button-text">Стало</span>
+              </button>
             </div>
           </div>
         </div>
@@ -221,7 +228,7 @@
             <h2 class="visually-hidden">Наши контакты</h2>
             <p class="contacts__title">Приглашаем<br /> к сотрудничеству<br /> дилеров!</p>
             <address class="contacts__address">
-              ул. Большая<br /> Конюшенная, д. 19/8<br />
+              ул. Большая Конюшенная, д. 19/8
                 <span class="contacts__address-city">Санкт-Петербург</span>
             </address>
           </div>
@@ -229,7 +236,7 @@
         <div class="contacts__map contacts__map--nojs">
           <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1628014568403!5m2!1sru!2sru"
-          style="border:0;" allowfullscreen="" width="100%" height="400" loading="lazy" class="contacts__map-iframe"></iframe>
+          style="border: 0;" allowfullscreen="" height="400" loading="lazy" class="contacts__map-iframe"></iframe>
         </div>
       </div>
       <div class="page-footer__wrapper wrapper">
@@ -244,51 +251,54 @@
             />
           </a>
         </div>
-        <ul class="page-footer__social social list-reset">
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://vk.com/htmlacademy"
-              aria-label="Мы во Вконтакте"
-              target="_blank"
-              rel="noopener"
-            >
-              <svg class="social__icon social__icon--vkontakte" width="23" height="16" role="img" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://www.instagram.com/htmlacademy"
-              aria-label="Мы в Инстаграм"
-              target="_blank"
-              rel="noopener"
-            >
-              <svg class="social__icon social__icon--instagram" width="16" height="16" role="img" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://www.facebook.com/htmlacademy"
-              aria-label="Мы в Фейсбуке"
-              target="_blank"
-              rel="noopener"
-            >
-              <svg class="social__icon social__icon--facebook" width="22" height="22" role="img" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="page-footer__social social">
+          <ul class="social__list list-reset">
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://vk.com/htmlacademy"
+                aria-label="Мы во Вконтакте"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="social__icon social__icon--vkontakte" width="23" height="16" role="img" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://www.instagram.com/htmlacademy"
+                aria-label="Мы в Инстаграм"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="social__icon social__icon--instagram" width="16" height="16" role="img" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://www.facebook.com/htmlacademy"
+                aria-label="Мы в Фейсбуке"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="social__icon social__icon--facebook" width="22" height="22" role="img" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="page-footer__developer developer">
           <a
             class="developer__link"
             href="https://htmlacademy.ru/intensive/adaptive"
+            aria-label="Сайт HTML Academy"
             target="_blank"
             rel="noopener"
           >

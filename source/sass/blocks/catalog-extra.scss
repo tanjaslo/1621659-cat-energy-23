@@ -1,9 +1,13 @@
 .catalog-extra__wrapper {
+  padding-top: 25px;
+
   @media (min-width: $tablet-width) {
-    padding-bottom: 86px;
+    padding-bottom: 40px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 25px;
     display: grid;
     grid-template-columns: auto 245px;
     column-gap: 80px;
@@ -40,6 +44,14 @@
   }
 }
 
-.green-line {
+.catalog-extra-line {
   @include green-line-span;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+  }
 }

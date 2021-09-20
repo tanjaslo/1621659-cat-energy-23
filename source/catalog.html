@@ -12,20 +12,20 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrapper wrapper">
-        <div class="page-header__logo">
+        <div class="page-header__logo logo">
           <a
-          class="page-header__logo-link"
+          class="logo__link"
           aria-label="Перейти на главную страницу Cat Energy"
           href="index.html"
           >
-            <picture class="page-header__logo-image">
-              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+            <picture class="logo__image">
               <source srcset="img/logo-desktop.svg" media="(min-width: 1280px)">
+              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
               <img
-              class="page-header__logo-image"
+              class="logo__image"
               src="img/logo-mobile.svg"
               width="34"
               height="38"
@@ -34,20 +34,22 @@
             </picture>
           </a>
           <a
-            class="page-header__logo-link"
+            class="logo__link-text"
             aria-label="Перейти на главную страницу Cat Energy"
             href="index.html"
           >
             <img
-              class="page-header__logo-text"
+              class="logo__image-text"
               src="img/logo-mobile-text.svg"
               width="101"
               height="18"
               alt="Текстовый логотип сайта Cat energy"
             />
           </a>
-          <button class="main-nav__toggler main-nav__toggler--closed" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+          <button
+            class="page-header__toggler page-header__toggler--closed"
+            type="button" aria-label="Открыть меню"
+          >
           </button>
         </div>
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -73,7 +75,7 @@
           <ul class="catalog-main__list list-reset">
             <li class="catalog-main__item card">
               <a class="card__img-link" href="#" aria-label="Перейти на страницу продукта">
-                <picture class="card__img">
+                <picture>
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/chicken-small-tablet.webp 1x, img/chicken-small-tablet@2x.webp 2x">
                   <source type="image/webp"
@@ -112,7 +114,7 @@
             </li>
             <li class="catalog-main__item card">
               <a class="card__img-link" href="#" aria-label="Перейти на страницу продукта">
-                <picture class="card__img">
+                <picture>
                   <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/chicken-big-tablet.webp 1x, img/chicken-big-tablet@2x.webp 2x">
                   <source type="image/webp"
@@ -151,7 +153,7 @@
             </li>
             <li class="catalog-main__item card">
               <a class="card__img-link" href="#" aria-label="Перейти на страницу продукта">
-                <picture class="card__img">
+                <picture>
                   <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/fish-small-tablet.webp 1x, img/fish-small-tablet@2x.webp 2x">
                   <source type="image/webp"
@@ -190,7 +192,7 @@
             </li>
             <li class="catalog-main__item card">
               <a class="card__img-link" href="#" aria-label="Перейти на страницу продукта">
-                <picture class="card__img">
+                <picture>
                   <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/fish-big-tablet.webp 1x, img/fish-big-tablet@2x.webp 2x">
                   <source type="image/webp"
@@ -229,7 +231,7 @@
             </li>
             <li class="catalog-main__item card">
               <a class="card__img-link" href="#" aria-label="Перейти на страницу продукта">
-                <picture class="card__img">
+                <picture>
                   <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/buckwheat-small-tablet.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
                   <source type="image/webp"
@@ -268,7 +270,7 @@
             </li>
             <li class="catalog-main__item card">
               <a class="card__img-link" href="#" aria-label="Перейти на страницу продукта">
-                <picture class="card__img">
+                <picture>
                   <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/buckwheat-big-tablet.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
                   <source type="image/webp"
@@ -280,9 +282,7 @@
                     class="card__img"
                     src="img/buckwheat-big.png"
                     srcset="img/buckwheat-big@2x.png 2x"
-                    width="84"
-                    height="100"
-                    alt="Фото Cat energy Pro гречка 500гр"
+                    alt="Фото Cat energy Pro гречка 1000гр"
                   />
                 </picture>
               </a>
@@ -309,7 +309,7 @@
             </li>
             <li class="catalog-main__item card">
               <a class="card__img-link" href="#" aria-label="Перейти на страницу продукта">
-                <picture class="card__img">
+                <picture>
                   <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/rice-small-tablet.webp 1x, img/rice-small-tablet@2x.webp 2x">
                   <source type="image/webp"
@@ -359,7 +359,7 @@
               </a>
               <div class="card__info card__info--last-card">
                 <h3 class="card__title card__title--last-card">
-                  <a class="card__product-link" href="#">
+                  <a class="card__product-link card__product-link--last-card" href="#">
                     Показать еще 100500 товаров
                   </a>
                 </h3>
@@ -373,7 +373,7 @@
       <section class="catalog-extra">
         <div class="catalog-extra__wrapper wrapper">
           <h2 class="catalog-extra__title catalog-extra__title--title-line">
-            <span class="green-line">Дополнительные товары</span>
+            <span class="catalog-extra-line">Дополнительные товары</span>
           </h2>
           <ul class="catalog-extra__list list-reset">
             <li class="catalog-extra__item card-extra">
@@ -432,7 +432,7 @@
           <div class="contacts__map contacts__map--nojs">
             <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1628014568403!5m2!1sru!2sru"
-            style="border:0;" allowfullscreen="" height="400" loading="lazy" class="contacts__map-iframe"></iframe>
+            style="border: 0;" allowfullscreen="" height="400" loading="lazy" class="contacts__map-iframe"></iframe>
           </div>
       </div>
       <div class="page-footer__wrapper wrapper">
@@ -447,58 +447,61 @@
             />
           </a>
         </div>
-        <ul class="page-footer__social social list-reset">
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://vk.com/htmlacademy"
-              aria-label="Мы во Вконтакте"
-              target="_blank"
-              rel="noopener"
-            >
-              <svg class="social__icon social__icon--vkontakte" width="23" height="16" role="img" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://www.instagram.com/htmlacademy"
-              aria-label="Мы в Инстаграм"
-              target="_blank"
-              rel="noopener"
-            >
-              <svg class="social__icon social__icon--instagram" width="16" height="16" role="img" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://www.facebook.com/htmlacademy"
-              aria-label="Мы в Фейсбуке"
-              target="_blank"
-              rel="noopener"
-            >
-              <svg class="social__icon social__icon--facebook" width="22" height="22" role="img" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="page-footer__social social">
+          <ul class="social__list list-reset">
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://vk.com/htmlacademy"
+                aria-label="Мы во Вконтакте"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="social__icon social__icon--vkontakte" width="23" height="16" role="img" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://www.instagram.com/htmlacademy"
+                aria-label="Мы в Инстаграм"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="social__icon social__icon--instagram" width="16" height="16" role="img" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://www.facebook.com/htmlacademy"
+                aria-label="Мы в Фейсбуке"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="social__icon social__icon--facebook" width="22" height="22" role="img" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="page-footer__developer developer">
           <a
             class="developer__link"
             href="https://htmlacademy.ru/intensive/adaptive"
+            aria-label="Сайт HTML Academy"
             target="_blank"
             rel="noopener"
           >
             <span class="developer__name">HTML Academy</span>
-              <svg class="developer__logo" width="27" height="34">
-                <use xlink:href="img/sprite.svg#icon-developer"></use>
-              </svg>
+            <svg class="developer__logo" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-developer"></use>
+            </svg>
           </a>
         </div>
       </div>

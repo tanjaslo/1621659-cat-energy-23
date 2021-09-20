@@ -1,7 +1,9 @@
 .checkbox-field {
-  margin-bottom: 23px;
+  max-width: 221px;
+  padding: 5px 0 7px 0;
+  margin-bottom: 9px;
 
-  &:last-child {
+  &:last-of-type {
     margin-bottom: 0;
   }
 }
@@ -57,19 +59,28 @@
 .checkbox-field__control:checked + .checkbox-field__name::after {
   content: "";
   position: absolute;
+  display: block;
   left: 7px;
   top: 6px;
-  width: 18px;
-  height: 14px;
-  background-image: url("../img/check.svg");
+  width: 19px;
+  height: 15px;
+  background-image: url("../img/check-mobile.svg");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    left: 11px;
-    top: 13px;
+    background-image: url("../img/check.svg");
+    width: 26px;
+    height: 26px;
+    left: 9px;
+    top: 11px;
   }
 }
 
 .checkbox-field__control:disabled + .checkbox-field__name {
   opacity: 30%;
+}
+
+.checkbox-field__control:focus + .checkbox-field__name::before {
+  border-color: $color-darkgrey;
+  border-width: 2px;
 }

@@ -33,7 +33,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 69px;
-    margin-bottom: 76px;
 
     background: linear-gradient($background-green, $background-green),
       url("../img/present-tablet.jpg") no-repeat center center / cover;
@@ -73,7 +72,7 @@
 
 .present__text {
   @include text-style($basic-font-family, 16px, 20px, $color-white);
-  padding: 40px 20px;
+  padding: 30px 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -87,9 +86,9 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    align-self: center;
+    align-self: flex-end;
     justify-self: center;
     text-align: center;
-    padding: 0 20px;
+    padding: 30px;
   }
 }

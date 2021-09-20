@@ -43,12 +43,22 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-right: 35px;
+    padding-top: 10px;
+    margin-right: 36px;
     border: none;
 
-    &:last-child {
+    &:last-of-type {
       border-bottom: none;
       margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 32px;
+
+    &:first-of-type {
+      border-bottom: none;
+      margin-right: 36px;
     }
   }
 }
@@ -70,7 +80,7 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
 
     &--active,
     &--current {
@@ -80,8 +90,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    line-height: 30px;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
 
     &--index {
       color: $color-white;
@@ -90,26 +99,5 @@
     &--active {
       border-bottom: 2px solid $color-white;
     }
-  }
-}
-
-.main-nav__toggler {
-  width: 24px;
-  height: 20px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  background-repeat: no-repeat;
-
-  &--opened {
-    background-image: url("../img/icon-close.svg");
-  }
-
-  &--closed {
-    background-image: url("../img/icon-hamburger.svg");
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }

@@ -2,11 +2,11 @@
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 73px;
+    margin-bottom: 71px;
   }
 }
 
@@ -25,17 +25,24 @@
 }
 
 .programs__item {
+  margin: 0;
+
   background-color: $basic-grey;
   padding: 30px 20px 20px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 53px 55px;
+    padding: 77px 22px 55px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 31px 59px 52px;
   }
 }
 
 .programs__title {
   @include text-style($extra-font-family, 24px, 37px, $color-black);
   text-transform: uppercase;
+  display: block;
   margin: 0;
   margin-bottom: 29px;
   margin-left: 70px;
@@ -66,17 +73,14 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-  }
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     margin-left: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 
     &--slim::before {
       width: 200px;
       height: 211px;
       top: 0;
-      left: 65%;
+      left: 394px;
       background-image: url("../img/icon-cat-slim2.svg");
     }
 
@@ -84,28 +88,28 @@
       width: 268px;
       height: 200px;
       top: 15px;
-      left: 60%;
+      left: 360px;
       background-image: url("../img/icon-cat-pro2.svg");
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
-    margin-left: 170px;
+    margin-left: 160px;
+    margin-bottom: 73px;
 
     &--slim::before {
       width: 100px;
       height: 108px;
-      left: -170px;
-      top: -25px;
+      left: -160px;
+      top: -35px;
       background-image: url("../img/icon-cat-slim3.svg");
     }
 
     &--pro::before {
       width: 134px;
       height: 100px;
-      left: -190px;
-      top: -25px;
+      left: -180px;
+      top: -30px;
       background-image: url("../img/icon-cat-pro3.svg");
     }
   }
@@ -118,14 +122,14 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     border-bottom: none;
-    width: 55%;
+    max-width: 340px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    margin-bottom: 23px;
+    max-width: 100%;
+    margin-bottom: 27px;
   }
 }
 
