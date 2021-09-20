@@ -15,11 +15,15 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 6px;
     border-bottom: 1px solid $border-midgrey;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
   }
 }
 
