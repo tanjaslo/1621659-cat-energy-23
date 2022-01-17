@@ -19,7 +19,7 @@
     "gulp-svgstore": "8.0.0",
     "gulp-terser": "2.0.1",
     "gulp-webp": "4.0.1",
-    "postcss": "8.2.10",
+    "postcss": "8.2.13",
     "postcss-csso": "5.0.1",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.10"
